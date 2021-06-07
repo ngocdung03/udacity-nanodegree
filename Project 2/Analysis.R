@@ -1,0 +1,11 @@
+rm(list = ls())
+library(tidyverse)
+library(ggplot2)
+#library(lubridate)
+setwd("C:/Users/ngocdung/Dropbox/Front-end developer/src/data-science-path/udacity-nanodegree/Project 2/Support materials")
+list.files()
+month_sales <- read.csv("p2-2010-pawdacity-monthly-sales-p2-2010-pawdacity-monthly-sales.csv", stringsAsFactors = F)
+population <- read.csv("p2-partially-parsed-wy-web-scrape.csv", stringsAsFactors = F)
+naics <- read.csv("p2-wy-453910-naics-data.csv", stringsAsFactors = F)
+demographic <- read.csv("p2-wy-demographic-data.csv", stringsAsFactors = F)
+
