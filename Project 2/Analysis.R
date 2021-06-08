@@ -34,48 +34,37 @@ month_sales2 <- month_sales %>%
   merge(., demographic, by="City") %>% 
   mutate(Total.sales = January+February+March+April+May+June+July+August+September+October+November+December)
 
+train <- month_sales2[c("City", 
+                        "Census2010",
+                        "Total.sales",
+                        "Households.with.Under.18",
+                        "Land.Area", 
+                        "Population.Density", 
+                        "Total.Families")]
+              
+row.names(train) <- row.names(month_sales2)
 # Calculate sum
-apply(month_sales2[c("Census2010",
-                     "Total.sales",
-                     "Households.with.Under.18",
-                     "Land.Area", 
-                     "Population.Density", 
-                     "Total.Families")],
-      2,sum)
+apply(train, 2,sum)
   
 # Calculate average  
-apply(month_sales2[c("Census2010",
-                     "Total.sales",
-                     "Households.with.Under.18",
-                     "Land.Area", 
-                     "Population.Density", 
-                     "Total.Families")],
-      2,mean)
+apply(train, 2,mean)
 
-is_outlier <- function(vector) {
+# Display the boolean matrix for is_outlier of cities x vars
+is_outlier2 <- function(vector) {
   q25 <- unname(quantile(vector, 0.25))
   q75 <- unname(quantile(vector, 0.75))
   iqr <- q75 - q25
-  if(min(vector) < q25 - 1.5*iqr | max(vector) > q75 + 1.5*iqr) {
-    return(TRUE)
-  } else {
-    return(FALSE)
+  a <- vector(mode="logical", length=length(vector))
+  names(a) <- train$City
+  for (i in length(vector)){
+    if(min(vector) < q25 - 1.5*iqr | max(vector) > q75 + 1.5*iqr) {
+      a[i] <- TRUE
+    } else {
+      a[i] <- FALSE
+    }
   }
+  return(a)
 }
+apply(train[-1],2,is_outlier2)
 
-apply(month_sales2[c("Census2010",
-                     "Total.sales",
-                     "Households.with.Under.18",
-                     "Land.Area", 
-                     "Population.Density", 
-                     "Total.Families")],
-      2,is_outlier)
-
-summary(month_sales2[c("Census2010",
-                     "Total.sales",
-                     "Households.with.Under.18",
-                     "Land.Area", 
-                     "Population.Density", 
-                     "Total.Families")])
-
-# Display the boolean matrix for is_outlier of cities x vars
+#write.csv(train, "training_dataset.csv",row.names = F)
