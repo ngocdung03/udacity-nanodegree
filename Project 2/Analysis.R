@@ -56,10 +56,13 @@ is_outlier2 <- function(vector) {
   iqr <- q75 - q25
   a <- vector(mode="logical", length=length(vector))
   names(a) <- train$City
-  for (i in length(vector)){
-    if(min(vector) < q25 - 1.5*iqr | max(vector) > q75 + 1.5*iqr) {
+  lower <- q25 - 1.5*iqr
+  upper <- q75 + 1.5*iqr
+  for (i in 1:length(vector)){              #mistake without '1:'
+    if((vector[i] < lower) | (vector[i] > upper)) {
       a[i] <- TRUE
-    } else {
+    }
+    else{   
       a[i] <- FALSE
     }
   }
