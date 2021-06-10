@@ -71,3 +71,5 @@ is_outlier2 <- function(vector) {
 apply(train[-1],2,is_outlier2)
 
 #write.csv(train, "training_dataset.csv",row.names = F)
+
+# Remove Cheyenne
