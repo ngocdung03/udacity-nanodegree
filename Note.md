@@ -3,3 +3,38 @@
     - Logit: most common
     - Probit
     - Log-log
+- Model comparision:
+    - Accuracy, F1, AUC
+    - Performance diagnostics plots:
+        - Gain chart
+        - Lift chart/curves
+        - Precision and recall curve
+        - ROC curve ...
+    - *In the example: regression + stepwise perform the best
+- Variable Status has some classes that are not statistically significant. Keep in mind:
+    - It is not possible to keep only part of a categorical variable
+    - If NO class in a categorical variable is significant, then you may consider not using the variable at all.
+    - If ANY class in a categorical variable is significant, then you should keep it.
+    - A combination of classes in a categorical variable is possible with testing, but it should make logical sense though.
+        - In this case Status.Gold is significant but Status.Silver & Status.Platinum are not. To create a Gold vs. Other does not make logical sense since Gold is between Silver and Platinum.
+- Forest model results:
+    - *Out of the bag* error rate: 
+        - How well the model performed
+        - How solid the model performs with estimation data (similar to R-squared)
+    - Confusion matrix: 
+        - How well the model performed
+        - Where error occured in classifying data (any trend or bias?)
+    - The Percentage Error for Different Number of Trees graph: determine the ideal number of trees.
+    - Variable Importance graph: focuson which variables are most associated with the data.
+- Boosted model:
+    - Instead of creating a bunch of random trees, the boosted model makes one tree.It analyzes on the errors of the tree to identify the biggest source of error. Then it changes the tree to reduce that error and the it does the analysis again to find the next biggest error...
+    - Both accurate AND fast.
+    - Mathematical foundation: https://en.wikipedia.org/wiki/Gradient_boosting
+- Boosted model results:
+    - Variable importance plot
+    - Number of iterations assessment plot:     
+        - shows that amount of variance, or deviance, that is captured with more iterations. 
+        - How many trees are needed to create the optimal result?
+- Project:
+    - Cleanup, format, and blend a wide range of data sources
+    - Build predictive classification models using Logistic Regression, Decision Tree, Random Forest, and Boosted Model

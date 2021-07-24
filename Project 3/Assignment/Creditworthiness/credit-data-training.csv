@@ -1,0 +1,501 @@
+Credit-Application-Result,Account-Balance,Duration-of-Credit-Month,Payment-Status-of-Previous-Credit,Purpose,Credit-Amount,Value-Savings-Stocks,Length-of-current-employment,Instalment-per-cent,Guarantors,Duration-in-Current-address,Most-valuable-available-asset,Age-years,Concurrent-Credits,Type-of-apartment,No-of-Credits-at-this-Bank,Occupation,No-of-dependents,Telephone,Foreign-Worker
+Creditworthy,Some Balance,4,Paid Up,Other,1494,£100-£1000,< 1yr,1,None,2,1,,Other Banks/Depts,2,1,1,2,1,2
+Creditworthy,Some Balance,4,Paid Up,Home Related,1494,£100-£1000,< 1yr,1,None,2,1,29,Other Banks/Depts,2,1,1,2,1,2
+Creditworthy,Some Balance,4,No Problems (in this bank),Home Related,1544,None,1-4 yrs,2,None,1,1,42,Other Banks/Depts,2,More than 1,1,2,1,1
+Creditworthy,Some Balance,4,No Problems (in this bank),Home Related,3380,None,1-4 yrs,1,None,1,1,37,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,No Account,6,Paid Up,Home Related,343,None,< 1yr,4,None,1,1,27,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,6,No Problems (in this bank),Home Related,362,< £100,< 1yr,4,None,,3,52,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,6,Some Problems,Home Related,433,£100-£1000,< 1yr,4,None,,2,24,Other Banks/Depts,1,1,1,2,1,1
+Creditworthy,No Account,6,Paid Up,Home Related,454,None,< 1yr,3,None,,2,22,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,6,Paid Up,Home Related,484,None,1-4 yrs,3,Yes,3,1,28,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,6,Paid Up,Home Related,660,£100-£1000,1-4 yrs,2,None,4,1,23,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,6,No Problems (in this bank),Home Related,666,£100-£1000,1-4 yrs,3,None,4,1,39,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,6,No Problems (in this bank),Home Related,700,£100-£1000,4-7 yrs,4,None,,4,36,Other Banks/Depts,3,More than 1,1,1,1,1
+Creditworthy,Some Balance,6,Paid Up,Home Related,709,£100-£1000,< 1yr,2,None,2,1,27,Other Banks/Depts,2,1,1,1,1,2
+Creditworthy,No Account,6,No Problems (in this bank),Home Related,932,£100-£1000,1-4 yrs,1,None,,2,39,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,6,No Problems (in this bank),Home Related,1047,None,< 1yr,2,None,,2,50,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,6,Paid Up,Home Related,1068,None,4-7 yrs,4,None,,3,28,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,No Account,6,Paid Up,Home Related,1203,< £100,4-7 yrs,3,None,,2,43,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,6,No Problems (in this bank),Used car,1221,£100-£1000,< 1yr,1,None,,2,27,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,6,Paid Up,New car,1236,£100-£1000,< 1yr,2,None,,2,50,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,6,Paid Up,Home Related,1338,£100-£1000,< 1yr,1,None,4,1,62,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,6,Paid Up,Home Related,1346,< £100,4-7 yrs,2,None,,4,42,Other Banks/Depts,3,1,1,2,2,1
+Creditworthy,No Account,6,No Problems (in this bank),Home Related,1361,None,< 1yr,2,None,4,1,40,Other Banks/Depts,2,1,1,2,1,2
+Creditworthy,No Account,6,Paid Up,Used car,1374,None,< 1yr,1,None,2,1,36,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,6,Paid Up,Home Related,1374,£100-£1000,< 1yr,4,None,,2,75,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,6,No Problems (in this bank),Home Related,1449,< £100,4-7 yrs,1,None,,3,31,Other Banks/Depts,2,More than 1,1,2,1,1
+Creditworthy,Some Balance,6,Paid Up,Home Related,1538,None,< 1yr,1,None,,4,56,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,6,Paid Up,Used car,1543,£100-£1000,< 1yr,4,None,2,1,33,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,6,No Problems (in this bank),Home Related,1898,£100-£1000,< 1yr,1,None,2,1,34,Other Banks/Depts,2,More than 1,1,2,1,1
+Creditworthy,No Account,6,Paid Up,Home Related,2063,None,< 1yr,4,None,,3,30,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,Some Balance,6,Paid Up,Home Related,2108,None,1-4 yrs,2,None,2,1,29,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,6,Paid Up,Used car,2116,None,< 1yr,2,None,2,1,41,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,6,Paid Up,Used car,2978,£100-£1000,< 1yr,1,None,,3,32,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,6,No Problems (in this bank),Home Related,3676,None,< 1yr,1,None,3,1,37,Other Banks/Depts,1,More than 1,1,2,1,1
+Non-Creditworthy,Some Balance,6,Paid Up,Used car,4611,None,< 1yr,1,None,,2,32,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,6,No Problems (in this bank),Home Related,4716,£100-£1000,< 1yr,1,None,3,1,44,Other Banks/Depts,2,More than 1,1,2,1,1
+Creditworthy,Some Balance,6,No Problems (in this bank),Home Related,6761,None,1-4 yrs,1,None,,4,45,Other Banks/Depts,2,More than 1,1,2,2,1
+Non-Creditworthy,No Account,6,Paid Up,Home Related,14555,£100-£1000,< 1yr,1,None,,2,23,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,6,Paid Up,Home Related,14896,None,4-7 yrs,1,None,,4,68,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,7,No Problems (in this bank),Home Related,730,£100-£1000,4-7 yrs,4,None,,2,46,Other Banks/Depts,1,More than 1,1,1,2,1
+Creditworthy,Some Balance,7,No Problems (in this bank),Home Related,846,£100-£1000,4-7 yrs,3,None,,4,36,Other Banks/Depts,3,1,1,1,1,1
+Creditworthy,No Account,7,Paid Up,Home Related,2576,None,< 1yr,2,Yes,2,1,35,Other Banks/Depts,2,1,1,1,1,2
+Creditworthy,No Account,8,Paid Up,Home Related,760,None,1-4 yrs,4,Yes,2,1,44,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,8,Paid Up,Home Related,907,None,< 1yr,3,None,2,1,26,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,8,No Problems (in this bank),Home Related,1164,None,4-7 yrs,3,None,,4,51,Other Banks/Depts,3,More than 1,1,2,2,1
+Creditworthy,No Account,8,Paid Up,Home Related,1414,None,< 1yr,4,Yes,2,1,33,Other Banks/Depts,2,1,1,1,1,2
+Creditworthy,No Account,8,No Problems (in this bank),Home Related,3398,None,1-4 yrs,1,None,4,1,39,Other Banks/Depts,2,More than 1,1,1,1,2
+Creditworthy,No Account,9,Paid Up,Home Related,276,None,< 1yr,4,None,4,1,22,Other Banks/Depts,1,1,1,1,1,1
+Non-Creditworthy,Some Balance,9,Paid Up,Home Related,745,None,< 1yr,3,None,2,1,28,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,9,No Problems (in this bank),Home Related,936,£100-£1000,4-7 yrs,4,None,,3,52,Other Banks/Depts,2,More than 1,1,1,2,1
+Non-Creditworthy,No Account,9,Paid Up,Used car,959,None,< 1yr,1,None,,3,29,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,9,No Problems (in this bank),Home Related,1138,None,< 1yr,4,None,4,1,25,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,9,No Problems (in this bank),Home Related,1154,None,4-7 yrs,2,None,4,1,37,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,9,Paid Up,Other,1199,None,1-4 yrs,4,None,4,2,,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,No Account,9,Paid Up,Home Related,1199,None,1-4 yrs,4,None,,2,67,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,9,No Problems (in this bank),Home Related,1224,None,< 1yr,3,None,1,1,30,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,9,No Problems (in this bank),Home Related,1244,£100-£1000,4-7 yrs,4,None,,2,41,Other Banks/Depts,1,More than 1,1,1,1,1
+Non-Creditworthy,Some Balance,9,Some Problems,Home Related,1337,None,< 1yr,4,None,,3,34,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,No Account,9,Paid Up,Home Related,1364,None,1-4 yrs,3,None,4,1,59,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,9,Paid Up,Used car,1388,None,< 1yr,4,None,2,1,26,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,9,Paid Up,Home Related,1391,None,< 1yr,2,None,1,1,27,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,9,Some Problems,Home Related,1437,< £100,1-4 yrs,2,None,,4,29,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,9,Paid Up,Home Related,1449,None,1-4 yrs,3,None,,3,27,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,9,No Problems (in this bank),Home Related,1501,None,4-7 yrs,2,None,,3,34,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,No Account,9,Paid Up,Other,1549,£100-£1000,< 1yr,4,None,2,1,,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,9,Paid Up,Home Related,1549,£100-£1000,< 1yr,4,None,2,1,35,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,9,Paid Up,Home Related,1670,None,< 1yr,4,None,,3,22,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,9,No Problems (in this bank),Used car,1919,None,1-4 yrs,4,None,,3,35,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,No Account,9,Paid Up,Used car,2030,£100-£1000,1-4 yrs,2,None,,3,24,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,9,No Problems (in this bank),Home Related,2134,None,< 1yr,4,None,,3,48,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,9,No Problems (in this bank),Used car,2406,None,< 1yr,2,None,,3,31,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,9,Paid Up,Home Related,2697,None,< 1yr,1,None,2,1,32,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,No Account,9,Paid Up,Home Related,3195,£100-£1000,< 1yr,1,None,2,1,33,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,9,Some Problems,New car,5129,None,4-7 yrs,2,None,,4,74,Other Banks/Depts,3,1,1,2,2,1
+Creditworthy,Some Balance,10,Paid Up,Home Related,1225,None,< 1yr,2,None,,3,37,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,Some Balance,10,Paid Up,Home Related,1240,< £100,4-7 yrs,1,None,,4,48,Other Banks/Depts,3,1,1,2,1,1
+Creditworthy,Some Balance,10,Paid Up,Used car,1275,None,< 1yr,4,None,,2,23,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,Some Balance,10,Paid Up,Home Related,1309,£100-£1000,< 1yr,4,Yes,,2,27,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,10,Paid Up,Home Related,1364,None,< 1yr,2,None,,3,64,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,10,Paid Up,Home Related,1546,None,< 1yr,3,None,2,1,31,Other Banks/Depts,2,1,1,2,1,2
+Creditworthy,No Account,10,No Problems (in this bank),Home Related,2241,None,< 1yr,1,None,3,1,48,Other Banks/Depts,1,More than 1,1,2,1,2
+Creditworthy,No Account,10,Paid Up,Home Related,2315,None,4-7 yrs,3,None,4,1,52,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,10,Paid Up,New car,2901,£100-£1000,< 1yr,1,None,4,1,31,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,10,Paid Up,Home Related,3949,None,< 1yr,1,Yes,,2,37,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,No Account,10,Paid Up,Home Related,7308,None,< 1yr,2,None,,4,70,Other Banks/Depts,3,1,1,1,2,1
+Creditworthy,Some Balance,11,No Problems (in this bank),Home Related,1154,< £100,< 1yr,4,None,4,1,57,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,11,No Problems (in this bank),Home Related,1322,£100-£1000,< 1yr,4,None,,3,40,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,11,Paid Up,Used car,1577,£100-£1000,< 1yr,4,None,1,1,20,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,11,Paid Up,Home Related,2142,£100-£1000,4-7 yrs,1,None,2,1,28,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,11,No Problems (in this bank),Home Related,3939,None,< 1yr,1,None,2,1,40,Other Banks/Depts,2,More than 1,1,2,1,1
+Creditworthy,No Account,12,Some Problems,Home Related,339,None,4-7 yrs,4,None,,3,45,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,12,No Problems (in this bank),Home Related,385,None,1-4 yrs,4,None,3,1,58,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,No Account,12,No Problems (in this bank),Home Related,585,None,< 1yr,4,Yes,4,1,20,Other Banks/Depts,1,More than 1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Home Related,625,None,< 1yr,4,Yes,1,1,26,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,12,Paid Up,Home Related,639,None,< 1yr,4,None,,3,30,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Used car,652,None,4-7 yrs,4,None,,2,24,Other Banks/Depts,1,1,1,1,1,1
+Non-Creditworthy,No Account,12,Paid Up,Home Related,674,< £100,1-4 yrs,4,None,,2,20,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,682,< £100,1-4 yrs,4,None,,3,51,Other Banks/Depts,2,More than 1,1,1,2,1
+Non-Creditworthy,No Account,12,Some Problems,Home Related,697,None,< 1yr,4,None,,3,46,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,701,None,< 1yr,4,None,,3,32,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Home Related,701,None,< 1yr,4,None,2,1,40,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Used car,708,None,< 1yr,2,Yes,,2,38,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,717,None,4-7 yrs,4,None,4,1,52,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,Some Balance,12,Paid Up,Home Related,719,None,4-7 yrs,4,None,,3,41,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,No Account,12,Paid Up,Home Related,754,£100-£1000,4-7 yrs,4,None,,2,38,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,12,Paid Up,Home Related,759,None,1-4 yrs,4,None,2,1,26,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,12,Paid Up,Used car,763,None,< 1yr,4,None,1,1,26,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,12,Paid Up,Home Related,766,£100-£1000,< 1yr,4,None,3,1,66,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,Some Balance,12,No Problems (in this bank),Other,797,£100-£1000,4-7 yrs,4,None,3,2,33,Other Banks/Depts,2,1,1,2,1,1
+Non-Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,797,£100-£1000,4-7 yrs,4,None,,2,33,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,No Account,12,Paid Up,Home Related,841,< £100,1-4 yrs,2,None,4,1,23,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,12,Paid Up,Home Related,886,£100-£1000,< 1yr,4,None,,3,21,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,12,Paid Up,Home Related,888,None,4-7 yrs,4,None,,3,41,Other Banks/Depts,2,1,1,2,1,1
+Non-Creditworthy,No Account,12,Paid Up,Home Related,900,£100-£1000,< 1yr,4,None,,3,23,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,12,Paid Up,Home Related,902,None,1-4 yrs,4,None,,2,21,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,926,None,< 1yr,1,None,,2,38,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Other,930,£100-£1000,4-7 yrs,4,None,4,1,,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,930,£100-£1000,4-7 yrs,4,None,4,1,65,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,12,No Problems (in this bank),Home Related,958,None,1-4 yrs,2,None,3,1,47,Other Banks/Depts,2,More than 1,1,2,1,1
+Creditworthy,No Account,12,Paid Up,Used car,983,£100-£1000,< 1yr,1,None,4,1,19,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,996,£100-£1000,1-4 yrs,4,None,4,1,23,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Home Related,1037,< £100,1-4 yrs,3,None,4,1,39,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Home Related,1103,None,1-4 yrs,4,Yes,3,1,29,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Home Related,1107,None,< 1yr,2,None,2,1,20,Other Banks/Depts,1,1,1,2,2,1
+Non-Creditworthy,No Account,12,Some Problems,Home Related,1108,None,1-4 yrs,4,None,3,1,28,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,Some Balance,12,Paid Up,Used car,1123,£100-£1000,< 1yr,4,None,,3,29,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Home Related,1158,£100-£1000,< 1yr,3,None,,3,26,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,1185,None,< 1yr,3,None,2,1,27,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Home Related,1200,£100-£1000,< 1yr,4,None,,2,23,Other Banks/Depts,1,1,1,1,2,1
+Non-Creditworthy,No Account,12,Paid Up,Home Related,1223,None,4-7 yrs,1,None,1,1,46,Other Banks/Depts,1,More than 1,1,1,1,1
+Non-Creditworthy,No Account,12,Paid Up,Home Related,1228,None,< 1yr,4,None,2,1,24,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,1240,£100-£1000,4-7 yrs,4,None,2,1,38,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Used car,1258,None,< 1yr,2,None,,2,22,Other Banks/Depts,1,More than 1,1,1,1,1
+Creditworthy,Some Balance,12,Paid Up,Home Related,1262,None,< 1yr,3,None,,3,25,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,12,Paid Up,Home Related,1274,None,< 1yr,3,None,1,1,37,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Used car,1289,None,< 1yr,4,Yes,,2,21,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Home Related,1318,£100-£1000,4-7 yrs,4,None,4,1,54,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,12,Paid Up,Home Related,1330,None,< 1yr,4,None,1,1,26,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,12,Paid Up,Home Related,1331,None,< 1yr,2,None,,3,22,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,Some Balance,12,Paid Up,Home Related,1386,£100-£1000,< 1yr,2,None,,2,26,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Other,1402,£100-£1000,1-4 yrs,3,None,4,3,,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Used car,1402,£100-£1000,1-4 yrs,3,None,,3,37,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,No Account,12,No Problems (in this bank),New car,1409,None,4-7 yrs,4,None,3,1,54,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,12,No Problems (in this bank),Home Related,1424,None,1-4 yrs,4,None,,2,26,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,12,Paid Up,Used car,1424,£100-£1000,4-7 yrs,3,None,4,1,55,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,12,Paid Up,Used car,1474,None,< 1yr,4,None,,2,33,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,12,Paid Up,Home Related,1484,£100-£1000,< 1yr,2,None,1,1,25,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,12,Paid Up,Home Related,1493,None,< 1yr,4,None,,3,34,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,Some Balance,12,No Problems (in this bank),New car,1503,None,< 1yr,4,None,4,1,41,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,12,No Problems (in this bank),New car,1526,None,4-7 yrs,4,None,,4,66,Other Banks/Depts,3,More than 1,1,1,1,1
+Non-Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,1555,£100-£1000,4-7 yrs,4,None,,4,55,Other Banks/Depts,3,More than 1,1,2,1,1
+Creditworthy,No Account,12,Paid Up,Used car,1620,None,< 1yr,2,Yes,,2,30,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,12,Paid Up,Other,1736,None,1-4 yrs,3,None,4,1,,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,12,Paid Up,Used car,1736,None,1-4 yrs,3,None,4,1,31,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Used car,1858,None,< 1yr,4,None,,3,22,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,12,No Problems (in this bank),New car,1860,None,< 1yr,4,None,,3,34,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,12,Paid Up,Home Related,1884,None,4-7 yrs,4,None,,3,39,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,12,Paid Up,Home Related,1893,None,< 1yr,4,Yes,,2,29,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,12,No Problems (in this bank),Home Related,1995,< £100,< 1yr,4,None,,3,27,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Home Related,2002,None,1-4 yrs,3,None,,2,30,Other Banks/Depts,1,1,1,2,2,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,2012,£100-£1000,1-4 yrs,4,None,,3,61,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,12,No Problems (in this bank),Home Related,2121,None,< 1yr,4,None,,2,30,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,12,Paid Up,Home Related,2141,< £100,1-4 yrs,3,None,,4,35,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,12,Paid Up,Home Related,2171,None,< 1yr,2,None,,3,29,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,12,No Problems (in this bank),Home Related,2171,None,< 1yr,4,None,,2,38,Other Banks/Depts,2,More than 1,1,1,1,2
+Non-Creditworthy,No Account,12,No Problems (in this bank),Used car,2246,None,4-7 yrs,3,None,,2,60,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,2247,None,< 1yr,2,None,,3,36,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,12,Paid Up,Home Related,2279,£100-£1000,< 1yr,4,None,,4,37,Other Banks/Depts,3,1,1,1,2,1
+Non-Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,2292,None,< 1yr,4,None,,3,42,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,No Account,12,Paid Up,Used car,2577,None,< 1yr,2,None,,3,42,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Home Related,2748,None,4-7 yrs,2,None,,4,57,Other Banks/Depts,3,More than 1,1,1,1,1
+Creditworthy,Some Balance,12,Paid Up,Home Related,2859,£100-£1000,< 1yr,4,None,,4,38,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,12,Paid Up,Home Related,2930,None,1-4 yrs,2,None,1,1,27,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Other,3017,None,< 1yr,3,None,1,1,,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,12,Paid Up,Used car,3017,None,< 1yr,3,None,1,1,34,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,12,No Problems (in this bank),Home Related,3124,None,< 1yr,1,None,3,1,49,Other Banks/Depts,2,More than 1,1,2,1,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Used car,3331,None,4-7 yrs,2,None,,2,42,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,12,Paid Up,Home Related,3399,£100-£1000,4-7 yrs,2,None,,3,37,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,12,Paid Up,Home Related,3527,£100-£1000,< 1yr,2,None,,2,45,Other Banks/Depts,2,1,1,2,2,1
+Creditworthy,Some Balance,12,No Problems (in this bank),Used car,5801,£100-£1000,4-7 yrs,2,None,,2,49,Other Banks/Depts,1,1,1,1,2,2
+Non-Creditworthy,No Account,12,Paid Up,Home Related,6468,£100-£1000,< 1yr,2,None,,4,52,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,12,Paid Up,Home Related,7472,£100-£1000,< 1yr,1,None,2,1,24,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,13,Paid Up,Home Related,1409,< £100,< 1yr,2,None,4,1,64,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,14,Paid Up,Home Related,1410,£100-£1000,4-7 yrs,1,None,2,1,35,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,14,Paid Up,Home Related,8978,None,4-7 yrs,1,None,,2,45,Other Banks/Depts,2,1,1,1,2,2
+Non-Creditworthy,No Account,15,Some Problems,Home Related,950,None,4-7 yrs,4,None,,3,33,Other Banks/Depts,1,More than 1,1,2,1,1
+Creditworthy,Some Balance,15,No Problems (in this bank),Used car,960,£100-£1000,1-4 yrs,3,None,,2,30,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,15,No Problems (in this bank),Used car,975,None,< 1yr,2,None,,2,25,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,15,Paid Up,New car,1300,£100-£1000,4-7 yrs,4,None,,4,45,Other Banks/Depts,3,1,1,2,1,1
+Creditworthy,No Account,15,Paid Up,Home Related,1308,None,4-7 yrs,4,None,,3,38,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,15,No Problems (in this bank),Home Related,1360,None,< 1yr,4,None,,2,31,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,15,Paid Up,Home Related,1386,£100-£1000,< 1yr,4,None,2,1,40,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,Some Balance,15,No Problems (in this bank),Home Related,1471,None,< 1yr,4,None,,4,35,Other Banks/Depts,3,More than 1,1,1,2,1
+Non-Creditworthy,No Account,15,No Problems (in this bank),Home Related,1512,£100-£1000,< 1yr,3,None,,2,61,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,15,No Problems (in this bank),Used car,1520,£100-£1000,4-7 yrs,4,None,,2,63,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,15,Some Problems,Home Related,1778,None,< 1yr,2,None,1,1,26,Other Banks/Depts,1,More than 1,1,1,1,1
+Creditworthy,Some Balance,15,No Problems (in this bank),Home Related,1829,None,4-7 yrs,4,None,,3,46,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,15,Paid Up,Home Related,1905,None,4-7 yrs,4,None,,3,40,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,Some Balance,15,Paid Up,Used car,2221,£100-£1000,< 1yr,2,None,,3,20,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,15,No Problems (in this bank),Home Related,2326,£100-£1000,< 1yr,2,None,,3,27,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,Some Balance,15,Paid Up,Home Related,2327,None,< 1yr,2,None,3,1,25,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,15,Paid Up,Home Related,2511,None,< 1yr,1,None,,3,23,Other Banks/Depts,1,1,1,1,1,1
+Non-Creditworthy,No Account,15,Paid Up,Home Related,2631,< £100,< 1yr,2,None,,3,28,Other Banks/Depts,1,More than 1,1,1,2,1
+Creditworthy,Some Balance,15,Paid Up,Home Related,2687,None,1-4 yrs,2,None,,2,26,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,Some Balance,15,No Problems (in this bank),Used car,2788,None,1-4 yrs,2,Yes,,3,24,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,15,Paid Up,Home Related,3186,£100-£1000,1-4 yrs,2,None,,3,20,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,15,No Problems (in this bank),Used car,3343,None,< 1yr,4,None,,4,28,Other Banks/Depts,3,1,1,1,2,1
+Creditworthy,Some Balance,15,No Problems (in this bank),New car,3594,None,< 1yr,1,None,,2,46,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,15,Paid Up,New car,4657,None,< 1yr,3,None,,3,30,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,16,No Problems (in this bank),Home Related,2625,None,4-7 yrs,2,Yes,,2,43,Other Banks/Depts,1,1,1,1,2,2
+Creditworthy,No Account,18,Paid Up,Home Related,866,None,< 1yr,4,Yes,2,1,25,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,18,No Problems (in this bank),Home Related,1028,None,< 1yr,4,None,3,1,36,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,18,No Problems (in this bank),Used car,1049,None,< 1yr,4,None,,2,21,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,18,No Problems (in this bank),Home Related,1055,None,< 1yr,4,None,,2,30,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,18,No Problems (in this bank),Home Related,1098,None,< 1yr,4,None,,3,65,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,18,No Problems (in this bank),Home Related,1149,£100-£1000,< 1yr,4,None,3,1,46,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,18,Paid Up,Home Related,1216,None,< 1yr,4,None,,3,23,Other Banks/Depts,1,1,1,1,2,1
+Non-Creditworthy,No Account,18,Paid Up,Home Related,1217,None,< 1yr,4,None,3,1,47,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,18,Paid Up,Home Related,1301,None,4-7 yrs,4,Yes,2,1,32,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,18,Paid Up,Home Related,1345,None,< 1yr,4,None,3,1,26,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,18,Some Problems,Home Related,1442,None,1-4 yrs,4,None,,4,32,Other Banks/Depts,3,More than 1,1,2,1,1
+Creditworthy,Some Balance,18,Paid Up,Home Related,1453,None,< 1yr,3,None,1,1,26,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,18,Paid Up,Home Related,1473,None,< 1yr,3,None,4,1,39,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,Some Balance,18,Paid Up,Used car,1533,None,< 1yr,4,Yes,,2,43,Other Banks/Depts,2,1,1,2,1,1
+Non-Creditworthy,No Account,18,Some Problems,Used car,1553,None,< 1yr,4,None,,3,44,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,18,No Problems (in this bank),Home Related,1582,£100-£1000,4-7 yrs,4,None,,3,46,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,18,No Problems (in this bank),Home Related,1795,None,4-7 yrs,3,Yes,4,1,48,Other Banks/Depts,1,More than 1,1,1,2,1
+Creditworthy,Some Balance,18,No Problems (in this bank),Home Related,1800,None,< 1yr,4,None,,3,24,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,Some Balance,18,No Problems (in this bank),Home Related,1864,< £100,< 1yr,4,None,2,1,30,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,18,No Problems (in this bank),Used car,1928,None,< 1yr,2,None,2,1,31,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,18,Paid Up,Home Related,1936,£100-£1000,1-4 yrs,2,None,,3,23,Other Banks/Depts,1,More than 1,1,1,1,1
+Creditworthy,Some Balance,18,Paid Up,Home Related,1961,None,4-7 yrs,3,None,,3,23,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,18,Paid Up,Used car,1984,None,< 1yr,4,None,,4,47,Other Banks/Depts,3,More than 1,1,1,1,1
+Non-Creditworthy,No Account,18,Paid Up,Used car,2039,None,< 1yr,1,None,4,1,20,Other Banks/Depts,1,1,1,1,1,1
+Non-Creditworthy,Some Balance,18,Paid Up,Home Related,2100,None,< 1yr,4,Yes,2,1,37,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,Some Balance,18,No Problems (in this bank),Home Related,2169,None,< 1yr,4,None,,3,28,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,18,No Problems (in this bank),Home Related,2238,None,< 1yr,2,None,,3,25,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,18,Paid Up,Home Related,2249,< £100,1-4 yrs,4,None,,3,30,Other Banks/Depts,2,1,1,2,2,1
+Creditworthy,Some Balance,18,No Problems (in this bank),Home Related,2404,None,< 1yr,2,None,,3,26,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,18,Paid Up,Used car,2515,None,< 1yr,3,None,4,1,43,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,18,Paid Up,Home Related,2622,< £100,< 1yr,4,None,,3,34,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,Some Balance,18,No Problems (in this bank),Home Related,2775,None,1-4 yrs,2,None,,2,31,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,Some Balance,18,Paid Up,Used car,2864,None,< 1yr,2,None,1,1,34,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,No Account,18,No Problems (in this bank),Home Related,2899,£100-£1000,4-7 yrs,4,None,,3,43,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,No Account,18,Paid Up,Home Related,3213,£100-£1000,< 1yr,1,None,3,1,25,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,18,No Problems (in this bank),Home Related,3590,None,< 1yr,3,None,,3,40,Other Banks/Depts,2,More than 1,1,2,2,1
+Creditworthy,No Account,18,No Problems (in this bank),Used car,3612,None,4-7 yrs,3,None,,2,37,Other Banks/Depts,2,1,1,1,2,2
+Creditworthy,No Account,18,Paid Up,Used car,3650,None,< 1yr,1,None,,3,22,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,18,No Problems (in this bank),New car,3850,None,1-4 yrs,3,None,,3,27,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,18,No Problems (in this bank),Used car,4297,None,4-7 yrs,4,None,,4,40,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,18,Paid Up,Home Related,4380,< £100,< 1yr,3,None,,3,35,Other Banks/Depts,2,1,1,2,2,1
+Creditworthy,No Account,18,Paid Up,Home Related,4439,None,4-7 yrs,1,Yes,1,1,33,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,18,Paid Up,Home Related,4594,None,< 1yr,3,None,,3,32,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,18,No Problems (in this bank),Used car,7374,None,< 1yr,4,None,,2,40,Other Banks/Depts,2,More than 1,1,1,2,1
+Non-Creditworthy,No Account,18,Paid Up,New car,7511,£100-£1000,4-7 yrs,1,None,,2,51,Other Banks/Depts,3,1,1,2,2,1
+Creditworthy,No Account,20,Paid Up,Used car,2212,£100-£1000,1-4 yrs,4,None,,3,39,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,20,No Problems (in this bank),Other,2235,None,< 1yr,4,Yes,2,2,33,Other Banks/Depts,1,More than 1,1,1,1,2
+Non-Creditworthy,No Account,20,No Problems (in this bank),Home Related,2235,None,< 1yr,4,Yes,,2,33,Other Banks/Depts,1,More than 1,1,1,1,2
+Creditworthy,Some Balance,20,No Problems (in this bank),Home Related,3485,£100-£1000,< 1yr,2,None,4,1,44,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,No Account,21,No Problems (in this bank),Home Related,571,None,4-7 yrs,4,None,4,1,65,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,21,Paid Up,Home Related,1188,None,4-7 yrs,2,None,,2,39,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,Some Balance,21,Paid Up,Used car,2241,None,4-7 yrs,4,None,2,1,50,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,21,No Problems (in this bank),Used car,2288,None,< 1yr,4,None,,2,23,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,Some Balance,21,No Problems (in this bank),Home Related,2580,£100-£1000,< 1yr,4,None,2,1,41,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,No Account,21,No Problems (in this bank),Used car,2745,£100-£1000,1-4 yrs,3,None,,3,32,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,21,Paid Up,Home Related,2782,£100-£1000,1-4 yrs,1,None,,3,31,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,21,Paid Up,Home Related,3160,£100-£1000,4-7 yrs,4,None,,2,41,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,21,No Problems (in this bank),New car,3275,None,4-7 yrs,1,None,,3,36,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,21,Paid Up,Home Related,3357,£100-£1000,< 1yr,4,None,,3,29,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,21,Paid Up,Used car,3599,None,1-4 yrs,1,None,,3,26,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,21,Paid Up,Used car,3976,£100-£1000,1-4 yrs,2,None,,3,35,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,Some Balance,21,No Problems (in this bank),Home Related,12680,£100-£1000,4-7 yrs,4,None,,4,30,Other Banks/Depts,3,1,1,1,2,1
+Creditworthy,Some Balance,22,Paid Up,Home Related,1283,£100-£1000,1-4 yrs,4,None,,2,25,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,717,£100-£1000,4-7 yrs,4,None,,3,54,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,Used car,929,£100-£1000,1-4 yrs,4,None,,3,31,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,937,None,< 1yr,4,None,,3,27,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,Some Balance,24,Paid Up,Home Related,947,None,1-4 yrs,4,None,,4,38,Other Banks/Depts,3,1,1,2,1,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,999,£100-£1000,4-7 yrs,4,None,,3,25,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,24,Some Problems,Home Related,1193,None,< 1yr,1,Yes,,4,29,Other Banks/Depts,1,More than 1,1,1,1,1
+Creditworthy,No Account,24,Paid Up,Home Related,1201,None,< 1yr,4,None,,2,26,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,24,No Problems (in this bank),Home Related,1231,£100-£1000,4-7 yrs,4,None,,2,57,Other Banks/Depts,1,More than 1,1,1,2,1
+Non-Creditworthy,No Account,24,Paid Up,Home Related,1246,None,< 1yr,4,None,2,1,23,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,1249,None,< 1yr,4,None,2,1,28,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,1258,None,1-4 yrs,4,None,1,1,25,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,1258,£100-£1000,< 1yr,3,None,,3,57,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,1275,£100-£1000,< 1yr,2,None,4,1,36,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,1278,None,4-7 yrs,4,None,1,1,36,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,1287,£100-£1000,4-7 yrs,4,None,4,1,37,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,1311,< £100,1-4 yrs,4,None,,2,26,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,1344,£100-£1000,1-4 yrs,4,None,2,1,37,Other Banks/Depts,2,More than 1,1,2,1,1
+Non-Creditworthy,No Account,24,Paid Up,Home Related,1355,None,< 1yr,3,None,,3,25,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,24,Some Problems,Home Related,1358,£100-£1000,4-7 yrs,4,None,,3,40,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,24,Paid Up,Home Related,1371,£100-£1000,< 1yr,4,None,4,1,25,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,1376,£100-£1000,1-4 yrs,4,None,,3,28,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,1377,< £100,4-7 yrs,4,None,,4,47,Other Banks/Depts,3,1,1,1,2,1
+Creditworthy,No Account,24,No Problems (in this bank),Home Related,1382,< £100,1-4 yrs,4,None,1,1,26,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,1393,None,< 1yr,2,Yes,2,1,31,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,1413,None,< 1yr,4,None,,2,28,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,24,Paid Up,Home Related,1442,None,1-4 yrs,4,None,,3,23,Other Banks/Depts,1,More than 1,1,1,1,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,1469,< £100,4-7 yrs,4,None,4,1,41,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,1516,£100-£1000,< 1yr,4,None,1,1,43,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,24,Some Problems,Home Related,1546,None,1-4 yrs,4,Yes,,3,24,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,1552,None,1-4 yrs,3,None,,3,32,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,No Account,24,No Problems (in this bank),Home Related,1553,< £100,1-4 yrs,3,None,,2,23,Other Banks/Depts,1,More than 1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,1597,None,4-7 yrs,4,None,,4,54,Other Banks/Depts,3,More than 1,1,2,1,1
+Creditworthy,No Account,24,No Problems (in this bank),Home Related,1743,None,4-7 yrs,4,None,,2,48,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,24,Paid Up,Used car,1747,None,< 1yr,4,Yes,,2,24,Other Banks/Depts,2,1,1,1,1,2
+Non-Creditworthy,No Account,24,Some Problems,Home Related,1837,None,1-4 yrs,4,None,,4,34,Other Banks/Depts,3,1,1,1,1,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,1851,None,1-4 yrs,4,Yes,,3,33,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,1901,< £100,< 1yr,4,None,,3,29,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,Used car,1925,None,< 1yr,2,None,2,1,26,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,1927,£100-£1000,< 1yr,3,None,,3,33,Other Banks/Depts,2,More than 1,1,1,2,1
+Non-Creditworthy,No Account,24,No Problems (in this bank),Home Related,1935,None,4-7 yrs,4,None,4,1,31,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,1940,£100-£1000,4-7 yrs,4,None,4,1,60,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,24,No Problems (in this bank),Home Related,1965,£100-£1000,< 1yr,4,None,,3,42,Other Banks/Depts,1,More than 1,1,1,2,1
+Creditworthy,No Account,24,Paid Up,Home Related,1967,None,4-7 yrs,4,None,,3,20,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,2022,None,< 1yr,4,None,,3,37,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Used car,2028,None,1-4 yrs,2,None,,2,30,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,24,No Problems (in this bank),Used car,2064,None,< 1yr,3,None,,2,34,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),New car,2197,£100-£1000,1-4 yrs,4,None,,3,43,Other Banks/Depts,2,More than 1,1,2,2,1
+Creditworthy,No Account,24,Some Problems,Home Related,2325,< £100,1-4 yrs,2,None,,3,32,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,24,No Problems (in this bank),New car,2346,None,1-4 yrs,4,None,,3,35,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,No Account,24,Paid Up,Other,2384,None,4-7 yrs,4,None,4,1,,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,24,Paid Up,Home Related,2384,None,4-7 yrs,4,None,4,1,64,Other Banks/Depts,1,1,1,1,1,1
+Non-Creditworthy,No Account,24,Paid Up,Home Related,2439,None,< 1yr,4,None,4,1,35,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,2463,< £100,1-4 yrs,4,None,,2,27,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,2578,£100-£1000,4-7 yrs,2,None,,3,34,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,24,Paid Up,New car,2670,None,4-7 yrs,4,None,,3,35,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,New car,2679,None,< 1yr,4,None,,4,29,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,2684,None,< 1yr,4,None,2,1,35,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,24,No Problems (in this bank),Home Related,2825,£100-£1000,1-4 yrs,4,None,,4,34,Other Banks/Depts,2,More than 1,1,2,2,1
+Creditworthy,No Account,24,Some Problems,Used car,2828,£100-£1000,< 1yr,4,None,4,1,22,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,Used car,2835,£100-£1000,4-7 yrs,3,None,,2,53,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,2872,< £100,4-7 yrs,3,None,4,1,36,Other Banks/Depts,2,1,1,2,2,1
+Creditworthy,Some Balance,24,Paid Up,Used car,2892,None,4-7 yrs,3,None,,4,51,Other Banks/Depts,3,1,1,1,1,1
+Creditworthy,No Account,24,Paid Up,Home Related,2896,< £100,< 1yr,2,None,,3,29,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,24,Paid Up,New car,2910,None,1-4 yrs,2,None,,4,34,Other Banks/Depts,3,1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,2978,£100-£1000,< 1yr,4,None,4,1,32,Other Banks/Depts,2,More than 1,1,2,2,1
+Creditworthy,No Account,24,Paid Up,Used car,3021,None,< 1yr,2,None,2,1,24,Other Banks/Depts,1,1,1,1,1,1
+Non-Creditworthy,No Account,24,Paid Up,Home Related,3092,< £100,< 1yr,3,None,,3,22,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,3105,£100-£1000,< 1yr,4,None,,3,25,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,24,Some Problems,Home Related,3161,None,< 1yr,4,None,,2,31,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,3235,£100-£1000,4-7 yrs,3,None,,3,36,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,24,Some Problems,Used car,3349,£100-£1000,< 1yr,4,None,,4,30,Other Banks/Depts,3,1,1,2,2,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,3430,£100-£1000,4-7 yrs,3,None,,3,31,Other Banks/Depts,2,1,1,2,2,1
+Non-Creditworthy,No Account,24,Some Problems,Used car,3552,None,1-4 yrs,3,None,,3,27,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Other,3617,£100-£1000,4-7 yrs,4,Yes,4,4,,Other Banks/Depts,1,More than 1,1,1,1,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Used car,3617,£100-£1000,4-7 yrs,4,Yes,,4,20,Other Banks/Depts,1,More than 1,1,1,1,1
+Creditworthy,No Account,24,Some Problems,New car,3632,None,< 1yr,1,Yes,,3,22,Other Banks/Depts,1,1,1,1,1,2
+Creditworthy,Some Balance,24,Paid Up,Used car,3749,None,< 1yr,2,None,,3,26,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,3757,None,4-7 yrs,4,Yes,,4,62,Other Banks/Depts,3,1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),New car,3868,None,4-7 yrs,4,None,,3,41,Other Banks/Depts,1,More than 1,1,1,2,1
+Creditworthy,No Account,24,Paid Up,Used car,4020,None,< 1yr,2,None,,3,27,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,24,No Problems (in this bank),New car,4042,£100-£1000,1-4 yrs,3,None,,2,43,Other Banks/Depts,2,More than 1,1,1,2,1
+Non-Creditworthy,No Account,24,Paid Up,New car,4113,£100-£1000,< 1yr,3,None,,3,28,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,4139,< £100,< 1yr,3,None,,2,27,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Used car,4151,< £100,< 1yr,2,None,,2,35,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,24,Some Problems,Home Related,4241,None,< 1yr,1,None,4,1,36,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,No Account,24,Paid Up,Used car,4351,£100-£1000,< 1yr,1,None,,2,48,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,4526,None,< 1yr,3,None,2,1,74,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,Some Balance,24,Paid Up,Home Related,4591,£100-£1000,< 1yr,2,None,,2,54,Other Banks/Depts,2,More than 1,1,1,2,1
+Non-Creditworthy,No Account,24,No Problems (in this bank),Used car,4736,None,< 1yr,2,None,,3,25,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,24,Paid Up,Home Related,4817,None,1-4 yrs,2,Yes,,2,31,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,24,No Problems (in this bank),Home Related,4870,None,< 1yr,3,None,,4,53,Other Banks/Depts,3,More than 1,1,2,1,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Other,5103,None,< 1yr,3,None,3,4,,Other Banks/Depts,3,More than 1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,5103,None,< 1yr,3,None,,4,47,Other Banks/Depts,3,More than 1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,New car,5433,£100-£1000,< 1yr,2,None,,2,26,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,5507,None,4-7 yrs,3,None,,4,44,Other Banks/Depts,3,More than 1,1,1,1,1
+Creditworthy,Some Balance,24,Paid Up,Used car,5511,< £100,< 1yr,4,None,,3,25,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,24,No Problems (in this bank),Home Related,5743,None,< 1yr,2,None,,4,24,Other Banks/Depts,3,More than 1,1,1,2,1
+Creditworthy,Some Balance,24,No Problems (in this bank),New car,5804,£100-£1000,< 1yr,4,None,2,1,27,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,Some Balance,24,Paid Up,Home Related,5943,£100-£1000,< 1yr,1,None,,3,44,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,No Account,24,No Problems (in this bank),Home Related,6403,None,< 1yr,1,None,,3,33,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,24,No Problems (in this bank),New car,6419,None,4-7 yrs,2,None,,4,44,Other Banks/Depts,3,More than 1,1,2,2,1
+Creditworthy,No Account,24,No Problems (in this bank),New car,6615,None,< 1yr,2,None,,4,75,Other Banks/Depts,3,More than 1,1,1,2,1
+Creditworthy,No Account,24,No Problems (in this bank),Home Related,6967,< £100,1-4 yrs,4,None,,3,36,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,Home Related,7393,None,< 1yr,1,None,,2,43,Other Banks/Depts,2,1,1,2,1,1
+Non-Creditworthy,Some Balance,24,No Problems (in this bank),Home Related,8648,None,< 1yr,2,None,,3,27,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,24,Paid Up,New car,9277,£100-£1000,< 1yr,2,None,,4,48,Other Banks/Depts,3,1,1,1,2,1
+Non-Creditworthy,No Account,24,No Problems (in this bank),Home Related,11938,None,< 1yr,2,Yes,,3,39,Other Banks/Depts,2,More than 1,1,2,2,1
+Non-Creditworthy,No Account,24,Paid Up,New car,12579,None,4-7 yrs,4,None,,4,44,Other Banks/Depts,3,1,1,1,2,1
+Creditworthy,No Account,26,Paid Up,New car,7966,None,< 1yr,2,None,,3,30,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,27,No Problems (in this bank),Home Related,2520,£100-£1000,< 1yr,4,None,,2,23,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,Some Balance,27,Paid Up,Home Related,2570,None,< 1yr,3,None,3,1,21,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,27,No Problems (in this bank),Home Related,5117,None,1-4 yrs,3,None,,3,26,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,27,No Problems (in this bank),New car,5965,None,4-7 yrs,1,None,,3,30,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,27,No Problems (in this bank),New car,8613,£100-£1000,< 1yr,2,None,,3,27,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,28,No Problems (in this bank),Home Related,2743,None,4-7 yrs,4,None,,3,29,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,28,Paid Up,Home Related,4006,None,< 1yr,3,None,,3,45,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,28,Some Problems,New car,7824,£100-£1000,< 1yr,3,Yes,4,1,40,Other Banks/Depts,1,More than 1,1,2,2,1
+Creditworthy,Some Balance,30,Paid Up,Other,1867,£100-£1000,4-7 yrs,4,None,4,3,,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,30,Paid Up,Home Related,1867,£100-£1000,4-7 yrs,4,None,,3,58,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,Some Balance,30,No Problems (in this bank),Home Related,1908,None,4-7 yrs,4,None,4,1,66,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,30,No Problems (in this bank),Home Related,1919,< £100,< 1yr,4,None,,4,30,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,30,Paid Up,Home Related,2150,None,< 1yr,4,Yes,,4,24,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,30,No Problems (in this bank),Home Related,2181,£100-£1000,4-7 yrs,4,None,4,1,36,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,30,Paid Up,Home Related,2333,£100-£1000,4-7 yrs,4,None,,3,30,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,30,Paid Up,Home Related,2522,None,4-7 yrs,1,Yes,,2,39,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,No Account,30,Paid Up,Home Related,2991,£100-£1000,4-7 yrs,2,None,,3,25,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,30,No Problems (in this bank),Home Related,3017,None,4-7 yrs,4,None,,2,47,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,30,No Problems (in this bank),Home Related,3077,£100-£1000,4-7 yrs,3,None,,3,40,Other Banks/Depts,2,More than 1,1,2,2,1
+Creditworthy,Some Balance,30,No Problems (in this bank),Home Related,3656,£100-£1000,4-7 yrs,4,None,,2,49,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,30,Some Problems,Home Related,4221,None,< 1yr,2,None,,3,28,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,30,No Problems (in this bank),Home Related,4249,None,< 1yr,4,None,,3,28,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,30,No Problems (in this bank),Home Related,4272,< £100,< 1yr,2,None,,2,26,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,30,Some Problems,Home Related,4280,< £100,< 1yr,4,None,,3,26,Other Banks/Depts,1,More than 1,1,1,1,1
+Creditworthy,Some Balance,30,Paid Up,New car,4811,£100-£1000,1-4 yrs,2,None,,2,24,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,30,No Problems (in this bank),New car,6187,< £100,1-4 yrs,1,None,,3,24,Other Banks/Depts,1,More than 1,1,1,1,1
+Creditworthy,Some Balance,33,No Problems (in this bank),Home Related,2764,None,< 1yr,2,None,,3,26,Other Banks/Depts,2,More than 1,1,1,2,1
+Non-Creditworthy,No Account,33,No Problems (in this bank),Used car,4281,£100-£1000,< 1yr,1,None,,3,23,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,33,No Problems (in this bank),New car,7253,None,1-4 yrs,3,None,,3,35,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,36,Paid Up,Home Related,909,£100-£1000,4-7 yrs,4,None,,2,36,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,36,Paid Up,Home Related,1842,None,< 1yr,4,None,,3,34,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,36,No Problems (in this bank),Home Related,2145,None,1-4 yrs,2,None,,3,24,Other Banks/Depts,2,More than 1,1,1,2,1
+Non-Creditworthy,No Account,36,No Problems (in this bank),Home Related,2225,None,4-7 yrs,4,None,,4,57,Other Banks/Depts,3,More than 1,1,1,2,1
+Creditworthy,No Account,36,Paid Up,Home Related,2273,None,1-4 yrs,3,None,,3,32,Other Banks/Depts,2,More than 1,1,2,1,1
+Creditworthy,Some Balance,36,Paid Up,Home Related,2299,£100-£1000,4-7 yrs,4,None,,3,39,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,36,Paid Up,Home Related,2323,None,1-4 yrs,4,None,,3,24,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,36,No Problems (in this bank),Used car,2348,None,< 1yr,3,None,,2,46,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,36,Paid Up,Home Related,2394,£100-£1000,< 1yr,4,None,,3,25,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,36,Some Problems,Home Related,2613,None,< 1yr,4,None,,3,27,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,36,Paid Up,Home Related,2671,< £100,< 1yr,4,Yes,,4,50,Other Banks/Depts,3,1,1,1,1,1
+Non-Creditworthy,No Account,36,Some Problems,Used car,2746,None,4-7 yrs,4,None,,3,31,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,36,No Problems (in this bank),Home Related,2820,None,< 1yr,4,None,,3,27,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,36,No Problems (in this bank),Home Related,2862,< £100,4-7 yrs,4,None,,4,30,Other Banks/Depts,3,1,1,1,1,1
+Creditworthy,Some Balance,36,Paid Up,Home Related,3079,£100-£1000,< 1yr,4,None,4,1,36,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,36,No Problems (in this bank),Home Related,3535,None,1-4 yrs,4,None,,3,37,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,36,Paid Up,Home Related,3595,None,4-7 yrs,4,None,,3,28,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,36,Paid Up,Used car,3620,None,< 1yr,1,Yes,,2,37,Other Banks/Depts,2,1,1,2,1,1
+Creditworthy,No Account,36,Paid Up,Home Related,3711,£100-£1000,< 1yr,2,None,,3,27,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,36,Some Problems,Home Related,3804,None,< 1yr,4,None,,3,42,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,Some Balance,36,Paid Up,Home Related,4210,None,< 1yr,4,None,,3,26,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,36,No Problems (in this bank),Home Related,4454,None,< 1yr,4,None,4,1,34,Other Banks/Depts,2,More than 1,1,1,1,1
+Non-Creditworthy,No Account,36,No Problems (in this bank),Home Related,4455,None,< 1yr,2,None,2,1,30,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,36,Paid Up,Home Related,4473,None,4-7 yrs,4,None,,3,31,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,36,Paid Up,Used car,5179,None,1-4 yrs,4,None,,2,29,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,36,Paid Up,Home Related,5848,None,< 1yr,4,None,,3,24,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,36,No Problems (in this bank),Home Related,6887,None,< 1yr,4,None,,2,29,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,36,Paid Up,New car,6948,None,< 1yr,2,None,,3,35,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,No Account,36,No Problems (in this bank),Home Related,7432,None,< 1yr,2,None,,2,54,Other Banks/Depts,1,1,1,1,1,1
+Non-Creditworthy,Some Balance,36,No Problems (in this bank),Home Related,7855,None,< 1yr,4,None,2,1,25,Other Banks/Depts,2,More than 1,1,1,2,1
+Non-Creditworthy,Some Balance,36,No Problems (in this bank),Home Related,7980,£100-£1000,< 1yr,4,None,,3,27,Other Banks/Depts,1,More than 1,1,1,2,1
+Non-Creditworthy,No Account,36,No Problems (in this bank),Home Related,8065,None,< 1yr,3,None,,4,25,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,Some Balance,36,Paid Up,New car,8133,None,< 1yr,1,None,,2,30,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,36,Paid Up,New car,8229,None,< 1yr,2,None,,2,26,Other Banks/Depts,2,1,1,2,1,1
+Non-Creditworthy,No Account,36,Paid Up,Used car,9034,< £100,< 1yr,4,Yes,,4,29,Other Banks/Depts,1,1,1,1,2,1
+Non-Creditworthy,No Account,36,Paid Up,New car,9398,None,< 1yr,1,None,,3,28,Other Banks/Depts,1,1,1,1,2,1
+Creditworthy,Some Balance,36,No Problems (in this bank),Home Related,9566,None,< 1yr,2,None,,3,31,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,36,No Problems (in this bank),New car,10477,£100-£1000,4-7 yrs,2,None,,4,42,Other Banks/Depts,3,More than 1,1,1,1,1
+Non-Creditworthy,No Account,36,Paid Up,Home Related,12612,< £100,< 1yr,1,None,,4,47,Other Banks/Depts,3,1,1,2,2,1
+Non-Creditworthy,No Account,36,Paid Up,Other,14318,None,4-7 yrs,4,None,2,4,57,Other Banks/Depts,3,1,1,1,2,1
+Non-Creditworthy,No Account,36,Paid Up,Home Related,14318,None,4-7 yrs,4,None,,4,57,Other Banks/Depts,3,1,1,1,2,1
+Creditworthy,Some Balance,39,Paid Up,New car,2569,£100-£1000,< 1yr,4,None,,3,24,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,39,Paid Up,New car,8588,< £100,4-7 yrs,4,None,,3,45,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,39,No Problems (in this bank),Home Related,11760,< £100,1-4 yrs,2,None,,4,32,Other Banks/Depts,1,1,1,1,2,1
+Non-Creditworthy,No Account,40,No Problems (in this bank),Home Related,5998,None,< 1yr,4,None,,4,27,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,42,Paid Up,Home Related,3965,None,< 1yr,4,None,,3,34,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,42,No Problems (in this bank),Used car,4041,£100-£1000,< 1yr,4,None,4,1,36,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,No Account,42,No Problems (in this bank),Home Related,5954,None,1-4 yrs,2,None,1,1,41,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,Some Balance,42,Paid Up,Home Related,7166,£100-£1000,1-4 yrs,2,None,,2,29,Other Banks/Depts,1,1,1,1,2,1
+Non-Creditworthy,No Account,42,Paid Up,Home Related,7174,£100-£1000,1-4 yrs,4,None,,3,30,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,45,Paid Up,Home Related,1845,None,< 1yr,4,None,,4,23,Other Banks/Depts,3,1,1,1,2,1
+Non-Creditworthy,No Account,45,Paid Up,Home Related,3031,< £100,< 1yr,4,Yes,,2,21,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,45,No Problems (in this bank),New car,4576,< £100,< 1yr,3,None,,3,27,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,45,Some Problems,Home Related,11816,None,4-7 yrs,2,None,,3,29,Other Banks/Depts,1,More than 1,1,1,1,1
+Creditworthy,No Account,47,Paid Up,Home Related,10722,None,< 1yr,1,None,1,1,35,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,48,No Problems (in this bank),New car,2751,£100-£1000,4-7 yrs,4,None,,3,38,Other Banks/Depts,2,More than 1,1,2,2,1
+Non-Creditworthy,No Account,48,Paid Up,Home Related,3060,None,1-4 yrs,4,None,4,1,28,Other Banks/Depts,2,More than 1,1,1,1,1
+Creditworthy,No Account,48,Some Problems,Home Related,3566,< £100,1-4 yrs,4,None,,3,30,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,48,No Problems (in this bank),Home Related,3578,£100-£1000,4-7 yrs,4,None,1,1,47,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,Some Balance,48,Some Problems,Home Related,3609,None,< 1yr,1,None,1,1,27,Other Banks/Depts,2,1,1,1,1,1
+Non-Creditworthy,No Account,48,Paid Up,Home Related,3931,None,1-4 yrs,4,None,,4,46,Other Banks/Depts,3,1,1,2,1,1
+Non-Creditworthy,No Account,48,Paid Up,Home Related,4308,None,< 1yr,3,None,,2,24,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,No Account,48,Paid Up,New car,4788,None,1-4 yrs,4,None,,2,26,Other Banks/Depts,2,1,1,2,1,1
+Non-Creditworthy,Some Balance,48,Paid Up,Home Related,4844,None,< 1yr,3,None,,3,33,Other Banks/Depts,1,1,1,1,2,1
+Non-Creditworthy,No Account,48,No Problems (in this bank),Used car,5096,None,< 1yr,2,None,,3,30,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,48,Paid Up,Home Related,5951,None,< 1yr,2,None,2,1,22,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,Some Balance,48,No Problems (in this bank),Home Related,6110,None,< 1yr,1,None,,4,31,Other Banks/Depts,3,1,1,1,2,1
+Non-Creditworthy,No Account,48,No Problems (in this bank),New car,6143,None,4-7 yrs,4,None,,4,58,Other Banks/Depts,3,More than 1,1,1,1,1
+Non-Creditworthy,No Account,48,No Problems (in this bank),Home Related,6224,None,4-7 yrs,4,None,,4,50,Other Banks/Depts,3,1,1,1,1,1
+Creditworthy,No Account,48,No Problems (in this bank),Home Related,6681,£100-£1000,< 1yr,4,None,,4,38,Other Banks/Depts,3,1,1,2,2,1
+Non-Creditworthy,No Account,48,Paid Up,Home Related,6758,None,< 1yr,3,None,,3,31,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,48,Some Problems,Used car,7119,None,< 1yr,3,None,,4,53,Other Banks/Depts,3,More than 1,1,2,1,1
+Creditworthy,Some Balance,48,No Problems (in this bank),Home Related,7238,£100-£1000,4-7 yrs,3,None,,3,32,Other Banks/Depts,2,More than 1,1,2,1,1
+Creditworthy,No Account,48,Paid Up,Home Related,7476,None,1-4 yrs,4,None,,4,50,Other Banks/Depts,3,1,1,1,2,1
+Creditworthy,No Account,48,No Problems (in this bank),Home Related,7582,< £100,< 1yr,2,None,,4,31,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,48,Some Problems,Home Related,7685,None,1-4 yrs,2,Yes,,3,37,Other Banks/Depts,1,1,1,1,1,1
+Creditworthy,Some Balance,48,No Problems (in this bank),New car,8858,£100-£1000,1-4 yrs,2,None,,4,35,Other Banks/Depts,3,More than 1,1,1,2,1
+Non-Creditworthy,No Account,48,Paid Up,Used car,9960,None,< 1yr,1,None,,3,26,Other Banks/Depts,2,1,1,1,2,1
+Creditworthy,No Account,48,Some Problems,Home Related,12169,£100-£1000,< 1yr,4,Yes,,4,36,Other Banks/Depts,3,1,1,1,2,1
+Creditworthy,No Account,48,Some Problems,Home Related,12204,£100-£1000,< 1yr,2,None,,3,48,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,48,Paid Up,Home Related,15672,None,< 1yr,2,None,,3,23,Other Banks/Depts,2,1,1,1,2,1
+Non-Creditworthy,No Account,48,Some Problems,Home Related,18424,None,< 1yr,1,None,,2,32,Other Banks/Depts,2,1,1,1,2,2
+Non-Creditworthy,No Account,60,Paid Up,Home Related,6288,None,< 1yr,4,None,,4,42,Other Banks/Depts,3,1,1,1,1,1
+Creditworthy,Some Balance,60,Paid Up,Home Related,6527,£100-£1000,< 1yr,4,None,,4,34,Other Banks/Depts,3,1,1,2,2,1
+Non-Creditworthy,No Account,60,No Problems (in this bank),Home Related,6836,None,4-7 yrs,3,None,,4,63,Other Banks/Depts,2,More than 1,1,1,2,1
+Creditworthy,No Account,60,No Problems (in this bank),Other,7418,£100-£1000,< 1yr,1,None,1,1,,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,60,No Problems (in this bank),Home Related,7418,£100-£1000,< 1yr,1,None,1,1,27,Other Banks/Depts,2,1,1,1,1,1
+Creditworthy,No Account,60,No Problems (in this bank),Home Related,9157,£100-£1000,< 1yr,2,None,,4,27,Other Banks/Depts,3,1,1,1,1,1
+Creditworthy,Some Balance,60,No Problems (in this bank),Home Related,13756,£100-£1000,4-7 yrs,2,None,,4,63,Other Banks/Depts,3,1,1,1,2,1
+Non-Creditworthy,No Account,60,Paid Up,Home Related,14027,None,1-4 yrs,4,None,,4,27,Other Banks/Depts,2,1,1,1,2,1
