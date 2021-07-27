@@ -6,10 +6,10 @@
 - Model comparision:
     - Accuracy, F1, AUC
     - Performance diagnostics plots:
-        - Gain chart
-        - Lift chart/curves
-        - Precision and recall curve
-        - ROC curve ...
+        - Gain chart and Lift chart/curves: http://www2.cs.uregina.ca/~dbd/cs831/notes/lift_chart/lift_chart.html
+        - Precision and recall curve: https://www.quora.com/What-is-Precision-Recall-PR-curve
+        - ROC curve: https://www.dataschool.io/roc-curves-and-auc-explained/ 
+        - ...
     - *In the example: regression + stepwise perform the best
 - Variable Status has some classes that are not statistically significant. Keep in mind:
     - It is not possible to keep only part of a categorical variable
