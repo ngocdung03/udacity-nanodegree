@@ -7,17 +7,17 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, error=TRUE)
 ```
 
 ## Step 1: Business and Data Understanding
-●	What decisions needs to be made?
+###	What decisions needs to be made?
 Determining whether customers are creditworthy to give a loan to.
 
-●	What data is needed to inform those decisions?
+###	What data is needed to inform those decisions?
 Outcome: Credit-Application-Result.
 
-●	What kind of model (Continuous, Binary, Non-Binary, Time-Series) do we need to use to help make these decisions?
+###	What kind of model (Continuous, Binary, Non-Binary, Time-Series) do we need to use to help make these decisions?
 Binary model.
 
 ## Step 2: Building the Training Set
@@ -104,6 +104,13 @@ print(cor(raw[c(numeric, numeric2)]))
 
 The final data set has 13 columns
 ```{r final}
+raw <- raw %>% mutate(Credit_Application_Result= as.factor(Credit_Application_Result),
+                           Account_Balance= as.factor(Account_Balance),
+                           Payment_Status_of_Previous_Credit=as.factor(Payment_Status_of_Previous_Credit),
+                           Purpose=as.factor(Purpose),
+                           Value_Savings_Stocks=as.factor(Value_Savings_Stocks),
+                           Length_of_current_employment=as.factor(Length_of_current_employment),
+                           No_of_Credits_at_this_Bank=as.factor(No_of_Credits_at_this_Bank))
 data <- raw
 glimpse(data) 
 ```
