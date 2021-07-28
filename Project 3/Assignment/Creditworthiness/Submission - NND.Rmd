@@ -1,114 +1,128 @@
-rm(list = ls())
-#memory.limit(size=20000)
-library(tidyverse)
-library(lubridate)
-library(caret)
-library(randomForest)
-library(bst)
-library(pROC)
-#library(Hmisc)
-#library(rms)
+---
+title: 'Project Creditworthiness'
+author: "Dung Nguyen"
+output: 
+  pdf_document:
+    latex_engine: lualatex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Step 1: Business and Data Understanding
+●	What decisions needs to be made?
+Determining whether customers are creditworthy to give a loan to.
+
+●	What data is needed to inform those decisions?
+Outcome: Credit-Application-Result.
+
+●	What kind of model (Continuous, Binary, Non-Binary, Time-Series) do we need to use to help make these decisions?
+Binary model.
+
+## Step 2: Building the Training Set
+After importing, the data set were formatted as suggested.
+```{r setwd, echo=FALSE}
 setwd("C:/Users/ngocdung/Dropbox/Front-end developer/src/data-science-path/udacity-nanodegree/Project 3/Assignment")
 raw <- read.csv("./Creditworthiness/credit-data-training.csv", stringsAsFactors=F)
 validation <- read.csv("./Creditworthiness/customers-to-score.csv", stringsAsFactors=F)
-colnames(raw) <- str_replace_all(colnames(raw), '\\.', '_')
-colnames(validation) <- str_replace_all(colnames(validation), '\\.', '_')
-glimpse(raw)
-glimpse(validation)
+```
 
-## 1. Building the dataing set
-# 1.1. Identifying and imputing missing data
+```{r import, message=c(32), warning=FALSE}
+library(tidyverse)
+library(caret)
+library(randomForest)
+library(bst)
+library(cowplot)
+#raw <- read.csv("./Creditworthiness/credit-data-training.csv", stringsAsFactors=F)
+#validation <- read.csv("./Creditworthiness/customers-to-score.csv", stringsAsFactors=F)
+colnames(validation) <- str_replace_all(colnames(validation), '\\.', '_')
+colnames(raw) <- str_replace_all(colnames(raw), '\\.', '_')
+glimpse(raw)
+
+```
+
+### Identifying and imputing missing data
+The number of missing values in each field:
+```{r missing}
 isna = vector(length = length(raw))
 i=1
 for(col in raw){
   isna[i] = sum(is.na(col))
   i = i + 1 }
-print(data.frame(colnames(raw), isna))  #Duration address - 344, Age years - 12
+print(data.frame(field = colnames(raw), no_of_missing = isna))
+```
 
-# Impute Age_years
-median_age <- median(raw$Age_years[!is.na(raw$Age_years)])
-raw$Age_years[is.na(raw$Age_years)] <- median_age
-#View(raw[is.na(raw$Age_years),c("Credit_Application_Result","Age_years")])
-
-# Drop Duration_in_Current_address
+`Duration_in_Current_address` has 344 missing values so I dropped it.
+`Age_years` has 12 missing values so I imputed it by median.
+```{r impute and drop}
 raw = raw[,!(colnames(raw) %in% c('Duration_in_Current_address'))]
 
-# 1.2. Identifying low-variability fields and removing them
-sapply(raw, unique)
-num_cols <-  c('Duration_of_Credit_Month', 
-               'Credit_Amount', 
-               'Age_years') #exclude outcome and potential factors
-factor <-  c('Instalment_per_cent', 
-           #'Duration_in_Current_address', 
+median_age <- median(raw$Age_years[!is.na(raw$Age_years)])
+raw$Age_years[is.na(raw$Age_years)] <- median_age
+mean(raw$Age_years)
+```
+
+### Identifying low-variability fields and removing them
+Frequency table and histogram of low-variability fields:
+```{r drop}
+print(list(count(raw, Occupation), 
+     count(raw, No_of_dependents),
+     count(raw, Foreign_Worker),
+     count(raw, Guarantors),
+     count(raw, Concurrent_Credits)))  
+
+p1 <- histogram(raw$Occupation)
+p2 <- histogram(raw$No_of_dependents)
+p3 <- histogram(raw$Foreign_Worker)
+p4 <- histogram(as.factor(raw$Guarantors))
+p5 <- histogram(as.factor(raw$Concurrent_Credits))
+plot_grid(p1, p2, p3, p4, p5)
+```
+
+After removing those fields plus `Telephone`, no high correlation was detected among numeric fields:
+```{r correlation}
+numeric <-  c('Duration_of_Credit_Month', 
+              'Credit_Amount', 
+              'Age_years')
+numeric2 <- c('Instalment_per_cent',   
            'Most_valuable_available_asset',
-           'Type_of_apartment',
-           'Occupation',
-           'No_of_dependents',
-           'Telephone',
-           'Foreign_Worker')  
-remain <- colnames(raw[!colnames(raw) %in% c(num_cols, factor)])
-
-count(raw, Instalment_per_cent)
-count(raw, Most_valuable_available_asset)
-count(raw, Type_of_apartment)
-count(raw, Occupation)  #1-500
-count(raw, No_of_dependents)  #1-427, 2-73
-count(raw, Telephone)  
-count(raw, Foreign_Worker)  #1-481, 2-19
-
-count(raw, Credit_Application_Result)
-count(raw, Account_Balance)
-count(raw, Payment_Status_of_Previous_Credit)
-count(raw, Purpose)  #Draw histo - temporarily accepted
-count(raw, Value_Savings_Stocks)
-count(raw, Length_of_current_employment)
-count(raw, Guarantors)  #1-457, 2-43
-count(raw, Concurrent_Credits)  #1-500
-count(raw, No_of_Credits_at_this_Bank)
-
-# data_scale <- scale(raw[c(num_cols, factor)], center = T, scale = T)
-# apply(data_scale,2, var)
-
-# 1.3. Identifying highly-correlate fields (at least 0.7)
-factor1 <- c('Instalment_per_cent',    #? Can treat as ordered numeric
-           'Most_valuable_available_asset',
-           #'Telephone',
            'Type_of_apartment')
-remain1 <- c("Credit_Application_Result",
+factor <- c("Credit_Application_Result",
              "Account_Balance",
              "Payment_Status_of_Previous_Credit",
              "Purpose",
              "Value_Savings_Stocks",
              "Length_of_current_employment",
              "No_of_Credits_at_this_Bank")
-raw <- raw %>% mutate(Credit_Application_Result= as.factor(Credit_Application_Result),
-                           Account_Balance= as.factor(Account_Balance),
-                           Payment_Status_of_Previous_Credit=as.factor(Payment_Status_of_Previous_Credit),
-                           Purpose=as.factor(Purpose),
-                           Value_Savings_Stocks=as.factor(Value_Savings_Stocks),
-                           Length_of_current_employment=as.factor(Length_of_current_employment),
-                           No_of_Credits_at_this_Bank=as.factor(No_of_Credits_at_this_Bank))
-                        
-a <- cor(raw[c(num_cols,factor1,remain1)])
-# a[a==1] <- 0
-# max(a) #0.5739797
-cor(raw[c(num_cols)])
 
-data <- raw[c(num_cols,factor1,remain1)]
-colnames(data)  #13
+raw <- data.frame(raw[c(numeric, numeric2)],
+                     apply(raw[factor],2, as.factor))
 
-## 2. Train your Classification Models
-#Bias/Fairness: Are Opportunity/Odds/Accuracy same across different groups ?
-#Prediction bias = average of predictions - average of lables in dataset
-#Is under predict = bias?
+print(cor(raw[c(numeric, numeric2)]))
+```
+
+The final data set has 13 columns
+```{r final}
+data <- raw
+glimpse(data) 
+```
+
+
+## Step 3: Train your Classification Models
+### Create Estimation and Validation samples
+```{r train test set}
 data$worthy <- as.factor(ifelse(data$Credit_Application_Result == 'Creditworthy', 1, 0))
 data$nonworthy <- as.factor(ifelse(data$Credit_Application_Result == 'Non-Creditworthy', 1, 0))
 
 set.seed(1)
 train.index <- createDataPartition(data$Credit_Application_Result, p = .7, list = FALSE)  
-train <- data[train.index,]  #351
-test <- data[-train.index,]  #149
+train <- data[train.index,]
+test <- data[-train.index,] 
+```
 
+### Confusion matrices
+```{r training}
 # Logistic regression
 lr <- vector()
 model1 <- train(Credit_Application_Result~., 
@@ -157,7 +171,7 @@ model2n <- train(nonworthy~.,
 y_hat2n <- predict(model2n, test)
 tree['Accuracy_nonworthy'] <- confusionMatrix(data = y_hat2n, reference = test$nonworthy)$overall["Accuracy"]
 
-vi2 <- varImp(model2, scale = F)   #pvalue
+vi2 <- varImp(model2, scale = F)   
 plot2 <- ggplot(vi2, top = dim(vi2$importance)[1]) + 
   ggtitle('Variable Importance - Decision Tree')
 
@@ -173,6 +187,7 @@ y_hat30 <- predict(model3, train)
 forest['Accuracy_train'] <- confusionMatrix(data = y_hat30, reference = train$Credit_Application_Result)$overall["Accuracy"]
 forest['Accuracy_test'] <- confusionMatrix(data = y_hat3, reference = test$Credit_Application_Result)$overall["Accuracy"]   
 
+set.seed(1)
 model3w <- train(worthy~., 
                  data=train[!colnames(train) %in% c('Credit_Application_Result', 'nonworthy')], 
                  method='rf',
@@ -180,6 +195,7 @@ model3w <- train(worthy~.,
 y_hat3w <- predict(model3w, test)
 forest['Accuracy_worthy'] <- confusionMatrix(data = y_hat3w, reference = test$worthy)$overall["Accuracy"]
 
+set.seed(1)
 model3n <- train(nonworthy~., 
                  data=train[!colnames(train) %in% c('Credit_Application_Result', 'worthy')], 
                  method='rf',
@@ -192,13 +208,8 @@ plot3 <- ggplot(vi3, top = dim(vi3$importance)[1]) +
   ggtitle('Variable Importance - Random Forest')
   
 # Boosted model - Boosted Classification Trees
-# In Alteryx default, max number of trees 4000, method to determine the final number of trees: Cross validation (5 folds, 1 machine core) 
-# Must modify the data so that factor variablies -> numeric factor variables?
-
-# model4 <- bst(train[-1], 
-#                 as.numeric(train$Credit_Application_Result), 
-#                 learner='tree')  
 boosted <- vector()
+# Data have to be re-formatted for bst() function
 train4 <- train %>% mutate(#Credit_Application_Result= as.numeric(Credit_Application_Result),
   Account_Balance= as.factor(as.numeric(Account_Balance)),
   Payment_Status_of_Previous_Credit=as.factor(as.numeric(Payment_Status_of_Previous_Credit)),
@@ -206,9 +217,6 @@ train4 <- train %>% mutate(#Credit_Application_Result= as.numeric(Credit_Applica
   Value_Savings_Stocks=as.factor(as.numeric(Value_Savings_Stocks)),
   Length_of_current_employment=as.factor(as.numeric(Length_of_current_employment)),
   No_of_Credits_at_this_Bank=as.factor(as.numeric(No_of_Credits_at_this_Bank)),
-  # Instalment_per_cent = as.factor(Instalment_per_cent),
-  # Most_valuable_available_asset = as.factor(Most_valuable_available_asset),
-  # Type_of_apartment = as.factor(Type_of_apartment)
   )
 
 test4 <- test %>% mutate(#Credit_Application_Result= as.numeric(Credit_Application_Result),
@@ -218,9 +226,6 @@ test4 <- test %>% mutate(#Credit_Application_Result= as.numeric(Credit_Applicati
   Value_Savings_Stocks=as.factor(as.numeric(Value_Savings_Stocks)),
   Length_of_current_employment=as.factor(as.numeric(Length_of_current_employment)),
   No_of_Credits_at_this_Bank=as.factor(as.numeric(No_of_Credits_at_this_Bank)),
-  # Instalment_per_cent = as.factor(Instalment_per_cent),
-  # Most_valuable_available_asset = as.factor(Most_valuable_available_asset),
-  # Type_of_apartment = as.factor(Type_of_apartment)
   )
 control <- trainControl(method = "cv", number = 5)
 set.seed(1)
@@ -233,6 +238,7 @@ y_hat40 <- predict(model4, train4)
 boosted['Accuracy_train'] <- confusionMatrix(data = y_hat40, reference = train4$Credit_Application_Result)$overall["Accuracy"]  
 boosted['Accuracy_test'] <- confusionMatrix(data = y_hat4, reference = test4$Credit_Application_Result)$overall["Accuracy"]  
 
+set.seed(1)
 model4w <- train(worthy~., 
                  data=train4[!colnames(train) %in% c('Credit_Application_Result', 'nonworthy')], 
                  method='bstTree',
@@ -240,6 +246,7 @@ model4w <- train(worthy~.,
 y_hat4w <- predict(model4w, test4)
 boosted['Accuracy_worthy'] <- confusionMatrix(data = y_hat4w, reference = test4$worthy)$overall["Accuracy"]
 
+set.seed(1)
 model4n <- train(nonworthy~., 
                  data=train4[!colnames(train) %in% c('Credit_Application_Result', 'worthy')], 
                  method='bstTree',
@@ -251,16 +258,39 @@ vi4 <- varImp(model4, scale = F)   #pvalue
 plot4 <- ggplot(vi4, top = dim(vi4$importance)[1]) + 
   ggtitle('Variable Importance - Boosted Tree')
 
-plot_grid(plot1, plot2, plot3, plot4)
+#Print confusion matrices
+print(confusionMatrix(data = y_hat1, reference = test$Credit_Application_Result))
+print(confusionMatrix(data = y_hat2, reference = test$Credit_Application_Result))
+print(confusionMatrix(data = y_hat3, reference = test$Credit_Application_Result))
+print(confusionMatrix(data = y_hat4, reference = test4$Credit_Application_Result))
+```
+### Overall accuracy
+Among the 4 models, Logistic regression has the highest overall accuracy agains the Validation set (0.83). The bias can be seen in Logistic regression, Random forest, and Boosted tree, since accuracy against train set is lower than validation test for those models. 
+```{r acc train test}
+print(data.frame(lr, tree, forest, boosted)[c('Accuracy_train','Accuracy_test'),])
+```
+### Plot variable importance
+Most important predictors:
+- For Logistic regression: Account_Balance, Payment_Status_of_Previous_Credit, Credit_Amoun, Value_Savings_Stocks, Purpose, Instalment_per_cent.
+- For Decision tree: Payment_Status_of_Previous_Credit, Credit_Amount, Value_Savings_Stocks, Account_Balance, Duration_of_Credit_Month.
+- For Random forest: Credit_Amount, Age_years, Duration_of_Credit_Month.
+- For Boosted tree: Account_Balance, Value_Savings_Stocks, Paymen_Status_of_Previous_Credit, and Duration_of_Credit_Month are the 4 most important variables. The difference is not remarkable among the fields.
+```{r plot1}
+plot1
+plot2
+plot3
+plot4
+```
 
-# ROCs
-roc(as.numeric(test$Credit_Application_Result), 
-    as.numeric(y_hat1), plot = TRUE, AUC=TRUE)$auc   #3c_2
+## Step 4: Writeup
+Accuracy table
+```{r acc}
+print(data.frame(lr, tree, forest, boosted))
+```
 
-x <- predict(optimal_rf_fit_log, test_obs[, c("Group", all_metabolites)], type = "raw")
-y <- ROC(as.numeric(x), stat = test_obs$Group, AUC = TRUE, ) 
-
-
+Plot ROCs 
+```{r plot2}
+par(pty = "s")
 roc(as.numeric(test$Credit_Application_Result), 
     as.numeric(y_hat1), plot=TRUE,
     legacy.axes=TRUE, percent=TRUE, 
@@ -268,25 +298,42 @@ roc(as.numeric(test$Credit_Application_Result),
     ylab="True Postive Percentage", 
     print.auc=TRUE,
     print.auc.x=45,
-    # col="#377eb8", 
-    # lwd=4, partial.auc=c(100, 90), auc.polygon = TRUE, 
-    # auc.polygon.col = "#377eb822"
     ) 
 legend("bottomright", legend=c("Logisitic Regression"))
 
-plot.roc(as.numeric(test$Credit_Application_Result), 
-         as.numeric(y_hat3), 
-         legacy.axes=TRUE, percent=TRUE, 
-         xlab="False Positive Percentage", 
-         ylab="True Postive Percentage", 
+plot.roc(as.numeric(test$Credit_Application_Result),
+         as.numeric(y_hat2),
+         legacy.axes=TRUE, percent=TRUE,
+         xlab="False Positive Percentage",
+         ylab="True Postive Percentage",
          print.auc=TRUE,
          print.auc.x=45,
-         col="#4daf4a", 
-         # lwd=4, partial.auc=c(100, 90), auc.polygon = TRUE, 
-         # auc.polygon.col = "#377eb822"
-) 
-legend("bottomright", legend=c("Random Forest"), 
-       col=c("#377eb8", "#4daf4a"), lwd=4)
+)
+legend("bottomright", legend=c("Decision Tree"))
 
+plot.roc(as.numeric(test$Credit_Application_Result),
+         as.numeric(y_hat3),
+         legacy.axes=TRUE, percent=TRUE,
+         xlab="False Positive Percentage",
+         ylab="True Postive Percentage",
+         print.auc=TRUE,
+         print.auc.x=45,
+)
+legend("bottomright", legend=c("Random Forest"))
 
-
+plot.roc(as.numeric(test$Credit_Application_Result),
+         as.numeric(y_hat4),
+         legacy.axes=TRUE, percent=TRUE,
+         xlab="False Positive Percentage",
+         ylab="True Postive Percentage",
+         print.auc=TRUE,
+         print.auc.x=45,
+)
+legend("bottomright", legend=c("Boosted Tree"))
+```
+Logistic regresson model has the highest overall accuracy against the Validation set, as well as the highest accuracy within segments. It is also has the most optimal ROC. Therefore, I choose to use logistic regression model.
+Applying the chosen model, the number of individuals are creditworthy is 413.
+```{r predict}
+yhat_final <- predict(model1, validation)
+print(sum(yhat_final=='Creditworthy'))
+```
