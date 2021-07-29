@@ -337,6 +337,7 @@ plot.roc(as.numeric(test$Credit_Application_Result),
          print.auc.x=45,
 )
 legend("bottomright", legend=c("Boosted Tree"))
+
 ```
 Logistic regresson model has the highest overall accuracy against the Validation set, as well as the highest accuracy within segments. It is also has the most optimal ROC. Therefore, I choose to use logistic regression model.
 Applying the chosen model, the number of individuals are creditworthy is 413.
