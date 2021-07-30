@@ -7,7 +7,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, error=TRUE)
+knitr::opts_chunk$set(echo = FALSE, error=TRUE)
 ```
 
 ## Step 1: Business and Data Understanding
@@ -15,7 +15,10 @@ knitr::opts_chunk$set(echo = TRUE, error=TRUE)
 Determining whether customers are creditworthy to give a loan to.
 
 ###	What data is needed to inform those decisions?
-Outcome: Credit-Application-Result.
+- Data set of past applications for training models:
+  - Outcome: Credit-Application-Result.
+  - Potention predictors: Duration_of_Credit_Month, Credit_Amount, Age_years, Instalment_per_cent, Most_valuable_available_asset, Type_of_apartment, and so on.
+- New data set (without outcome variable) to apply the chosen model and make decisions.
 
 ###	What kind of model (Continuous, Binary, Non-Binary, Time-Series) do we need to use to help make these decisions?
 Binary model.
@@ -34,6 +37,7 @@ library(caret)
 library(randomForest)
 library(bst)
 library(cowplot)
+library(pROC)
 #raw <- read.csv("./Creditworthiness/credit-data-training.csv", stringsAsFactors=F)
 #validation <- read.csv("./Creditworthiness/customers-to-score.csv", stringsAsFactors=F)
 colnames(validation) <- str_replace_all(colnames(validation), '\\.', '_')
@@ -139,12 +143,14 @@ y_hat1 <- predict(model1, test)
 y_hat10 <- predict(model1, train)
 lr['Accuracy_train'] <- confusionMatrix(data = y_hat10, reference = train$Credit_Application_Result)$overall["Accuracy"] #Bias
 lr['Accuracy_test'] <- confusionMatrix(data = y_hat1, reference = test$Credit_Application_Result)$overall["Accuracy"]
+lr['PPV'] <- confusionMatrix(data = y_hat1, reference = test$Credit_Application_Result)$byClass['Pos Pred Value']
+lr['NPV'] <- confusionMatrix(data = y_hat1, reference = test$Credit_Application_Result)$byClass['Neg Pred Value']
 
 model1w <- train(worthy~., 
                   data=train[!colnames(train) %in% c('Credit_Application_Result', 'nonworthy')], 
                   method='glm')
 y_hat1w <- predict(model1w, test)
-lr['Accyracy_worthy'] <- confusionMatrix(data = y_hat1w, reference = test$worthy)$overall["Accuracy"]
+lr['Accuracy_worthy'] <- confusionMatrix(data = y_hat1w, reference = test$worthy)$overall["Accuracy"]
 
 model1n <- train(nonworthy~., 
                   data=train[!colnames(train) %in% c('Credit_Application_Result', 'worthy')], 
@@ -165,6 +171,8 @@ y_hat2 <- predict(model2, test)
 y_hat20 <- predict(model2, train)
 tree['Accuracy_train'] <- confusionMatrix(data = y_hat20, reference = train$Credit_Application_Result)$overall["Accuracy"] 
 tree['Accuracy_test'] <- confusionMatrix(data = y_hat2, reference = test$Credit_Application_Result)$overall["Accuracy"]            
+tree['PPV'] <- confusionMatrix(data = y_hat2, reference = test$Credit_Application_Result)$byClass['Pos Pred Value']
+tree['NPV'] <- confusionMatrix(data = y_hat2, reference = test$Credit_Application_Result)$byClass['Neg Pred Value']
 
 model2w <- train(worthy~., 
                  data=train[!colnames(train) %in% c('Credit_Application_Result', 'nonworthy')], 
@@ -193,6 +201,8 @@ y_hat3 <- predict(model3, test)
 y_hat30 <- predict(model3, train)
 forest['Accuracy_train'] <- confusionMatrix(data = y_hat30, reference = train$Credit_Application_Result)$overall["Accuracy"]
 forest['Accuracy_test'] <- confusionMatrix(data = y_hat3, reference = test$Credit_Application_Result)$overall["Accuracy"]   
+forest['PPV'] <- confusionMatrix(data = y_hat3, reference = test$Credit_Application_Result)$byClass['Pos Pred Value']
+forest['NPV'] <- confusionMatrix(data = y_hat3, reference = test$Credit_Application_Result)$byClass['Neg Pred Value']
 
 set.seed(1)
 model3w <- train(worthy~., 
@@ -244,6 +254,8 @@ y_hat4 <- predict(model4, test4)
 y_hat40 <- predict(model4, train4)
 boosted['Accuracy_train'] <- confusionMatrix(data = y_hat40, reference = train4$Credit_Application_Result)$overall["Accuracy"]  
 boosted['Accuracy_test'] <- confusionMatrix(data = y_hat4, reference = test4$Credit_Application_Result)$overall["Accuracy"]  
+boosted['PPV'] <- confusionMatrix(data = y_hat4, reference = test4$Credit_Application_Result)$byClass['Pos Pred Value']
+boosted['NPV'] <- confusionMatrix(data = y_hat4, reference = test4$Credit_Application_Result)$byClass['Neg Pred Value']
 
 set.seed(1)
 model4w <- train(worthy~., 
@@ -272,9 +284,9 @@ print(confusionMatrix(data = y_hat3, reference = test$Credit_Application_Result)
 print(confusionMatrix(data = y_hat4, reference = test4$Credit_Application_Result))
 ```
 ### Overall accuracy
-Among the 4 models, Logistic regression has the highest overall accuracy agains the Validation set (0.83). The bias can be seen in Logistic regression, Random forest, and Boosted tree, since accuracy against train set is lower than validation test for those models. 
+Among the 4 models, Logistic regression has the highest overall accuracy agains the Validation set (0.83). The bias was not observed in Logistic regression, Random forest, and Boosted tree model considering PPV and NPV. 
 ```{r acc train test}
-print(data.frame(lr, tree, forest, boosted)[c('Accuracy_train','Accuracy_test'),])
+print(data.frame(lr, tree, forest, boosted)[c('Accuracy_train','Accuracy_test','PPV','NPV'),])
 ```
 ### Plot variable importance
 Most important predictors:
@@ -292,7 +304,7 @@ plot4
 ## Step 4: Writeup
 Accuracy table
 ```{r acc}
-print(data.frame(lr, tree, forest, boosted))
+print(data.frame(lr, tree, forest, boosted)[c('Accuracy_train','Accuracy_test','PPV','NPV'),])
 ```
 
 Plot ROCs 
@@ -339,7 +351,7 @@ plot.roc(as.numeric(test$Credit_Application_Result),
 legend("bottomright", legend=c("Boosted Tree"))
 
 ```
-Logistic regresson model has the highest overall accuracy against the Validation set, as well as the highest accuracy within segments. It is also has the most optimal ROC. Therefore, I choose to use logistic regression model.
+Logistic regresson model is not bias and has the highest overall accuracy against the Validation set. It is also has the most optimal ROC. Therefore, I choose to use logistic regression model.
 Applying the chosen model, the number of individuals are creditworthy is 413.
 ```{r predict}
 yhat_final <- predict(model1, validation)
