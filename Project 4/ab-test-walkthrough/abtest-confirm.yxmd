@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.5">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">sales-raw.xlsx|`treatment_control_pairs$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>sales-raw.xlsx
+Table=`treatment_control_pairs$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Controls" size="255" source="File: C:\Users\mark\Dropbox\Udacity\Predictive Analysis for Business\Projects\P5\AB Analysis Tool Question\sales-raw.xlsx|`treatment_control_pairs$`" type="V_String" />
+            <Field name="Treatments" size="255" source="File: C:\Users\mark\Dropbox\Udacity\Predictive Analysis for Business\Projects\P5\AB Analysis Tool Question\sales-raw.xlsx|`treatment_control_pairs$`" type="V_String" />
+            <Field name="Distance" source="File: C:\Users\mark\Dropbox\Udacity\Predictive Analysis for Business\Projects\P5\AB Analysis Tool Question\sales-raw.xlsx|`treatment_control_pairs$`" type="Double" />
+            <Field name="Region" size="255" source="File: C:\Users\mark\Dropbox\Udacity\Predictive Analysis for Business\Projects\P5\AB Analysis Tool Question\sales-raw.xlsx|`treatment_control_pairs$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">sales-raw.xlsx|`sales$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>sales-raw.xlsx
+Table=`sales$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Region" size="255" source="File: C:\Users\mark\Dropbox\Udacity\Predictive Analysis for Business\Projects\P5\AB Analysis Tool Question\sales-raw.xlsx|`sales$`" type="V_String" />
+            <Field name="Store" size="255" source="File: C:\Users\mark\Dropbox\Udacity\Predictive Analysis for Business\Projects\P5\AB Analysis Tool Question\sales-raw.xlsx|`sales$`" type="V_String" />
+            <Field name="Week" source="File: C:\Users\mark\Dropbox\Udacity\Predictive Analysis for Business\Projects\P5\AB Analysis Tool Question\sales-raw.xlsx|`sales$`" type="Double" />
+            <Field name="Week_Start" source="File: C:\Users\mark\Dropbox\Udacity\Predictive Analysis for Business\Projects\P5\AB Analysis Tool Question\sales-raw.xlsx|`sales$`" type="Date" />
+            <Field name="Week_End" source="File: C:\Users\mark\Dropbox\Udacity\Predictive Analysis for Business\Projects\P5\AB Analysis Tool Question\sales-raw.xlsx|`sales$`" type="Date" />
+            <Field name="Period" size="255" source="File: C:\Users\mark\Dropbox\Udacity\Predictive Analysis for Business\Projects\P5\AB Analysis Tool Question\sales-raw.xlsx|`sales$`" type="V_String" />
+            <Field name="Sum_Gross_Sales" source="File: C:\Users\mark\Dropbox\Udacity\Predictive Analysis for Business\Projects\P5\AB Analysis Tool Question\sales-raw.xlsx|`sales$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings>
+        <Position x="354" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="select.controls.id">Controls</Value>
+          <Value name="select.control.treatment.link">Treatments</Value>
+          <Value name="select.treatments.id">Treatments</Value>
+          <Value name="select.performance.id">Store</Value>
+          <Value name="select.performance.period">Week_Start</Value>
+          <Value name="select.performance.measure">Sum_Gross_Sales</Value>
+          <Value name="StartDate">2014-03-20</Value>
+          <Value name="EndDate">2014-05-28</Value>
+          <Value name="custom.comparison.period">True</Value>
+          <Value name="ComparisonStart">2014-01-09</Value>
+          <Value name="ComparisonEnd">2014-03-19</Value>
+          <Value name="test.name">AB Test</Value>
+          <Value name="additional.info" />
+          <Value name="measure.alt.name" />
+          <Value name="threshold">0.0</Value>
+          <Value name="save_dashboard" />
+          <Value name="date.format">ymd</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\AB_Analysis.yxmc" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="558" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\mark\AppData\Local\Temp\Engine_6076_4d8f62c90bee41d19e956b049e53cb23_\Engine_5856_4285df173fd24371ae1d684201db0949_.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="558" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\mark\AppData\Local\Temp\Engine_6076_4d8f62c90bee41d19e956b049e53cb23_\Engine_5856_c791db7d81fd412e9d28300404de29b5_.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Controls" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Treatments" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Performance Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Interactive Dashboard" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>abtest-confirm</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

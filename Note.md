@@ -38,3 +38,22 @@
 - Project:
     - Cleanup, format, and blend a wide range of data sources
     - Build predictive classification models using Logistic Regression, Decision Tree, Random Forest, and Boosted Model
+
+### Lesson 3: A/B test
+- Eperimental variables: outcome
+- Control variables: to make sure that 2 groups are as similar as possible
+- Determine which control variables should be used:
+    - List potential variables
+    - Is variable data available
+    - Logical connection between control and target variable
+    - Test the correlation between the control and target variables
+    - Test correlation between other correlation variable
+- Lurking variable (confounding): can cause you to overweight a control variable or include the control variables that aren't important
+- Randomized design: 
+    - little opportunity to control variables, volume and velocity of data is high enough that you are not worried about bias.
+    - groups are not predetermined.
+- Matched pair: 
+    - when the volume of observations is fairly low, great concern for bias, high cost per observation.
+    - must be set up ahead of time.
+    - can yield significant results even with a low number of treatment units.
+    - One cycle of experiment
