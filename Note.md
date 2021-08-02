@@ -52,8 +52,38 @@
 - Randomized design: 
     - little opportunity to control variables, volume and velocity of data is high enough that you are not worried about bias.
     - groups are not predetermined.
+    - choose duration and size: ensure control and treatment groups are representative of the population -> considering control variables.
+    - t-test
 - Matched pair: 
     - when the volume of observations is fairly low, great concern for bias, high cost per observation.
     - must be set up ahead of time.
     - can yield significant results even with a low number of treatment units.
     - One cycle of experiment
+    - Choose the treatment units:
+        - Identify outliers
+        - Decide number of treatment units
+        - Randomly select
+    - Treatment units >=10. Sometimes when the treatment units are low, the experiment may need to be repeated or run for a longer period of time.
+    - Choose the control units:
+        - Matched pair
+        - Alteryx: AB Controls tool using KD tree: connect treatment data to T, control data to D
+        - Balance the number of control units and average distance
+    - Analysis: paired t-test
+    - Data cleanup stage:
+        - scrubbing out any outliers
+        - getting rid of stores with missing data
+        - matching control stores to treatment stores
+        - selecting the appropriate comparable period
+    - To accommodate discrete variables, the units need to be matched with those that share a discrete characteristic.
+    - Problem solving framework: You may have to try different combinations to find variable that give you the best matching results.
+    - Select continuous control variables: 2 commons
+        - Trend: Growth in store traffic
+        - Seasonal patterns: in sales volume
+    - AB test tool in Alteryx need data duration of 1 year + 6 periods.
+    - Consider how long to run the experiment: if customer go to the store for a weekly basis -> at least 1 week 
+    - Assuming a customer visits the spa about once every ten weeks: 
+        - how long should our experiment last (how many weeks should we collect data)? 10 weeks.
+        - Based on the duration of our experiment, how many weeks of data should we have for our comparison period? 10 weeks.
+        - How many weeks of historical data should we have? 1 year + 12 weeks = 64 weeks
+        - Join tool in Alteryx: L output - control candidate stores, J output - treatment stores.
+        - A/B Analysis tool: P input - performance data,  I ouput - HTML based interaction dashboard, O output - textual summary 
