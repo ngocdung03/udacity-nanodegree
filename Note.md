@@ -87,3 +87,4 @@
         - How many weeks of historical data should we have? 1 year + 12 weeks = 64 weeks
         - Join tool in Alteryx: L output - control candidate stores, J output - treatment stores.
         - A/B Analysis tool: P input - performance data,  I ouput - HTML based interaction dashboard, O output - textual summary 
+d
