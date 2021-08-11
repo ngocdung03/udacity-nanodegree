@@ -1,7 +1,8 @@
 ---
-title: 'Project Creditworthiness'
+title: "Project Creditworthiness"
 author: "Dung Nguyen"
-output: 
+output:
+  word_document: default
   pdf_document:
     latex_engine: lualatex
 ---

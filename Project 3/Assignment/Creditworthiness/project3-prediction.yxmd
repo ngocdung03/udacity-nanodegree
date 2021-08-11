@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\ModelObj.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ModelObj.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Object" size="2147483647" source="R-DATA:SERIAL" type="Blob" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>customers-to-score.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Account-Balance" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Duration-of-Credit-Month" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Payment-Status-of-Previous-Credit" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Purpose" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Credit-Amount" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Value-Savings-Stocks" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Length-of-current-employment" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Instalment-per-cent" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Guarantors" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Duration-in-Current-address" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Most-valuable-available-asset" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Age-years" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Concurrent-Credits" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Type-of-apartment" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="No-of-Credits-at-this-Bank" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Occupation" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="No-of-dependents" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Telephone" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+            <Field name="Foreign-Worker" size="254" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\customers-to-score.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="210" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Duration-of-Credit-Month" selected="True" type="Double" size="8" />
+            <SelectField field="Credit-Amount" selected="True" type="Double" size="8" />
+            <SelectField field="Instalment-per-cent" selected="True" type="Double" size="8" />
+            <SelectField field="Duration-in-Current-address" selected="True" type="Double" size="8" />
+            <SelectField field="Most-valuable-available-asset" selected="True" type="Double" size="8" />
+            <SelectField field="Age-years" selected="True" type="Double" size="8" />
+            <SelectField field="Type-of-apartment" selected="True" type="Double" size="8" />
+            <SelectField field="Occupation" selected="True" type="Double" size="8" />
+            <SelectField field="No-of-dependents" selected="True" type="Double" size="8" />
+            <SelectField field="Telephone" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="Score">
+        <Position x="342" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">
+          </Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="438" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_22288_d1e9f5f83ca04a03983e3bce90a51d28_\Engine_18056_b846a627d6f747afbdf96582ec233388_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="402" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Score_Creditworthy]&gt;=0.5 THEN 1 ELSE 0 ENDIF" field="Creditworthy" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Creditworthy = IF [Score_Creditworthy]>=0.5 THEN 1 ELSE 0 ENDIF
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="474" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_22288_d1e9f5f83ca04a03983e3bce90a51d28_\Engine_18056_6b5e1e3fd0034998bd34892b4cd38089_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="522" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Creditworthy" action="Sum" rename="Sum_Creditworthy" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="618" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_22288_d1e9f5f83ca04a03983e3bce90a51d28_\Engine_18056_dafcc7442229439e87cde2c99c4d5ce6_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>project3-prediction</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
