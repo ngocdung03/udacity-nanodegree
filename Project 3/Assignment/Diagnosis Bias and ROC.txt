@@ -1,0 +1,14 @@
+Please find below the examples, on how to find the biases in the model.
+
+Suggestion: The overall percent accuracy of the Logistic model is 76% which is strong.
+PPV= true positives \ (true positives + false positives) = 92 / (92+23) =.80
+NPV= true negatives\ (true negatives + false negatives) =22/ (22+13)= .63
+So after checking the confusion matrix there is bias seen in the model's prediction to Creditworthy.
+
+The accuracy of the Forest model is 79% which is strong
+PPV= true positives \ (true positives + false positives) = 102 / (102+28) =.78
+NPV= true negatives \ (true negatives + false negatives) = 17/ (17+3) = .85
+So after checking the confusion matrix there is no bias seen in the model's prediction.
+
+In order to know whether a model is biased or not, we should look at the accuracies on both segments. You can consider bias as a tendency of a model to predict one of its outcomes much more accurately than the others. Let's say that a model's accuracy in correctly predicting creditworthy individuals is 79% and the accuracy in correctly predicting non-creditworthy individuals is 60%. 
+This means that this particular model has bias towards correctly predicting creditworthy individuals because its accuracy in this segment is way higher than in the other. Now another model has about 79% accuracy predicting Creditworthiness and 81% of accuracy in predicting non-creditworthiness. In this case, we say that this model is almost not biased at all, because the difference between those accuracies is very small.

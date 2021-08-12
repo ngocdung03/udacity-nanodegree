@@ -3,6 +3,7 @@
     - Logit: most common
     - Probit
     - Log-log
+    - * Remove variables that have too many categories within one predictor variable.
 - Model comparision:
     - Accuracy, F1, AUC
     - Performance diagnostics plots:

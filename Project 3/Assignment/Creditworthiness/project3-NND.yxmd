@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="54" width="336" height="24" />
+        <Position x="78" y="54" width="336" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -23,7 +23,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="30" y="450" width="276" height="60" />
+        <Position x="54" y="450" width="276" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -43,7 +43,7 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="402" y="54" width="288" height="24" />
+        <Position x="426" y="54" width="288" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -63,7 +63,7 @@
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="714" y="54" width="708" height="24" />
+        <Position x="738" y="54" width="708" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -83,7 +83,7 @@
     </Node>
     <Node ToolID="49">
       <GuiSettings>
-        <Position x="630" y="126" />
+        <Position x="654" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -101,7 +101,7 @@
     </Node>
     <Node ToolID="71">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="126" />
+        <Position x="78" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -118,9 +118,6 @@
 Query=`Sheet1$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Credit-Application-Result" size="255" source="File: C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\credit-data-training.xlsx|||`Sheet1$`" type="V_String" />
@@ -150,7 +147,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="72">
       <GuiSettings>
-        <Position x="810" y="126" />
+        <Position x="834" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -167,15 +164,12 @@ Query=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Logistic_Regression.yxmc" />
     </Node>
     <Node ToolID="73">
       <GuiSettings>
-        <Position x="810" y="282" />
+        <Position x="834" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -205,15 +199,12 @@ Query=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
     </Node>
     <Node ToolID="74">
       <GuiSettings>
-        <Position x="810" y="198" />
+        <Position x="834" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -265,15 +256,12 @@ Query=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Decision_Tree.yxmc" />
     </Node>
     <Node ToolID="75">
       <GuiSettings>
-        <Position x="810" y="366" />
+        <Position x="834" y="366" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -321,15 +309,12 @@ Query=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
     </Node>
     <Node ToolID="80">
       <GuiSettings>
-        <Position x="198" y="78" />
+        <Position x="222" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -345,19 +330,16 @@ Query=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
     </Node>
     <Node ToolID="90">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="150" y="198" />
+        <Position x="174" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_33560_90a019183ece4b07a97f3506c6af565f_\Engine_18056_2f31b0d8e49d4849af854e3485139be9_.yxdb</TempFile>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_4000_9913540aa0ab41d8b7c13b94196502be_\Engine_17276_f71968bc09744108980b943b4c2c5cf3_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -381,11 +363,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="94">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="270" y="66" />
+        <Position x="294" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_33560_90a019183ece4b07a97f3506c6af565f_\Engine_18056_a0ff58631b81469db05a94f4c7357c38_.yxdb</TempFile>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_4000_9913540aa0ab41d8b7c13b94196502be_\Engine_17276_45bbe1220ebf4fc48ac51c762577568b_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -409,7 +391,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="95">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="138" y="78" />
+        <Position x="162" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -430,7 +412,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="103">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="426" y="126" />
+        <Position x="450" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -464,11 +446,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="104">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="522" y="78" />
+        <Position x="546" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_33560_90a019183ece4b07a97f3506c6af565f_\Engine_18056_e55401516c5f4cf1af460cdb87edfebc_.yxdb</TempFile>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_4000_9913540aa0ab41d8b7c13b94196502be_\Engine_17276_aeb58d36504a4c78af9ccbcd779c13d5_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -492,7 +474,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="105">
       <GuiSettings>
-        <Position x="234" y="126" />
+        <Position x="258" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -513,9 +495,6 @@ Query=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Credit-Application-Result" size="255" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
@@ -545,11 +524,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="106">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="330" y="198" />
+        <Position x="354" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_33560_90a019183ece4b07a97f3506c6af565f_\Engine_18056_d6efc69b7e5d4b2a83e6a11293fa7ab9_.yxdb</TempFile>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_4000_9913540aa0ab41d8b7c13b94196502be_\Engine_17276_fbaf56c883ef43fda3acbd287a59a5ce_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -573,7 +552,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="107">
       <GuiSettings Plugin="AlteryxBasePluginsGui.PearsonCorrelation.PearsonCorrelation">
-        <Position x="534" y="234" />
+        <Position x="558" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -598,11 +577,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="108">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="594" y="234" />
+        <Position x="618" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_33560_90a019183ece4b07a97f3506c6af565f_\Engine_18056_d73eebd8af214249aae89d1969e70d26_.yxdb</TempFile>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_4000_9913540aa0ab41d8b7c13b94196502be_\Engine_17276_358a114778cd471fa4e47e7bdfb8617c_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -626,11 +605,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="109">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="894" y="90" />
+        <Position x="918" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_33560_90a019183ece4b07a97f3506c6af565f_\Engine_18056_3f441ffa725e4781a19e269acfad4dec_.yxdb</TempFile>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_4000_9913540aa0ab41d8b7c13b94196502be_\Engine_17276_d5df5203aa63461f9a5cbdf85771fe95_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -654,11 +633,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="111">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1206" y="246" />
+        <Position x="1230" y="246" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_33560_90a019183ece4b07a97f3506c6af565f_\Engine_18056_a2c820dea8d54e4f9b247f84230f0316_.yxdb</TempFile>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_4000_9913540aa0ab41d8b7c13b94196502be_\Engine_17276_00910426c80b4dbd9cf7e33753f8709e_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -682,7 +661,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="113">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="990" y="234" />
+        <Position x="1014" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -701,7 +680,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="114">
       <GuiSettings>
-        <Position x="1110" y="234" />
+        <Position x="1134" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -740,39 +719,13 @@ Query=`Sheet1$`</DefaultAnnotationText>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Model Comparison.yxmc" />
     </Node>
-    <Node ToolID="117">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="1314" y="354" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <File FileFormat="19" MaxRecords="">C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\ModelObj.yxdb</File>
-          <Passwords />
-          <FormatSpecificOptions>
-            <NoSpatialIndex>False</NoSpatialIndex>
-            <SaveSource>True</SaveSource>
-            <WriteCompatibleVersion>False</WriteCompatibleVersion>
-          </FormatSpecificOptions>
-          <MultiFile value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>ModelObj.yxdb</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
-    </Node>
     <Node ToolID="119">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="978" y="90" />
+        <Position x="1002" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_33560_90a019183ece4b07a97f3506c6af565f_\Engine_18056_a5c2b31ea9854531a85fd2ce33e1078e_.yxdb</TempFile>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_4000_9913540aa0ab41d8b7c13b94196502be_\Engine_17276_e7a3b6192d0a4576af21b20f5fa405dc_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -796,11 +749,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="120">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1182" y="150" />
+        <Position x="1206" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_33560_90a019183ece4b07a97f3506c6af565f_\Engine_18056_5cf82cd52e534aa69cf1f13b461423c5_.yxdb</TempFile>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_4000_9913540aa0ab41d8b7c13b94196502be_\Engine_17276_42634d5e46aa40f2b40ecff4144fd128_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -822,11 +775,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="121">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1326" y="162" />
+        <Position x="1350" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_33560_90a019183ece4b07a97f3506c6af565f_\Engine_18056_ee6c3d112f2e4f6e9d94c468820506b1_.yxdb</TempFile>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_4000_9913540aa0ab41d8b7c13b94196502be_\Engine_17276_866ad89c25604e64bd989a5ff9268893_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -848,11 +801,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="122">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1062" y="450" />
+        <Position x="1086" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_33560_90a019183ece4b07a97f3506c6af565f_\Engine_18056_ae3ea234295a4da1b70af4a725796710_.yxdb</TempFile>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_4000_9913540aa0ab41d8b7c13b94196502be_\Engine_17276_45be9d6a55ac4ba0bd24f3ff5e5ff9fb_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -876,11 +829,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="123">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="906" y="450" />
+        <Position x="930" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_33560_90a019183ece4b07a97f3506c6af565f_\Engine_18056_47688802beb74175ba114524f384937a_.yxdb</TempFile>
+          <TempFile>C:\Users\ngocdung\AppData\Local\Temp\Engine_4000_9913540aa0ab41d8b7c13b94196502be_\Engine_17276_94ddd2bb9bb643cd9bcd98a14015b4ba_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -901,6 +854,29 @@ Query=`Sheet1$`</DefaultAnnotationText>
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="124">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1050" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\ngocdung\Dropbox\Front-end developer\src\data-science-path\udacity-nanodegree\Project 3\Assignment\Creditworthiness\ModelObj.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ModelObj.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
   </Nodes>
   <Connections>
@@ -965,12 +941,12 @@ Query=`Sheet1$`</DefaultAnnotationText>
       <Destination ToolID="122" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="74" Connection="Interactive" />
-      <Destination ToolID="119" Connection="Input" />
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="124" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="75" Connection="Output" />
-      <Destination ToolID="117" Connection="Input" />
+      <Origin ToolID="74" Connection="Interactive" />
+      <Destination ToolID="119" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="75" Connection="Report" />
