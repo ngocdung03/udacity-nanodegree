@@ -12,3 +12,27 @@ So after checking the confusion matrix there is no bias seen in the model's pred
 
 In order to know whether a model is biased or not, we should look at the accuracies on both segments. You can consider bias as a tendency of a model to predict one of its outcomes much more accurately than the others. Let's say that a model's accuracy in correctly predicting creditworthy individuals is 79% and the accuracy in correctly predicting non-creditworthy individuals is 60%. 
 This means that this particular model has bias towards correctly predicting creditworthy individuals because its accuracy in this segment is way higher than in the other. Now another model has about 79% accuracy predicting Creditworthiness and 81% of accuracy in predicting non-creditworthiness. In this case, we say that this model is almost not biased at all, because the difference between those accuracies is very small.
+
+[... Other comments]
+
+[Invoice Date]>="2015-02-06" AND [Invoice Date]<"2016-07-22"
+
+You should use 3 numeric measures to match treatment and control stores.
+
+Trend
+Seasonality
+AvgMonthSales (This should be determined by looking at the correlation between the appropriate numeric variables in the round roasters stores file AvgMonthSales and Sq_ft with the performance metric gross margin.) 
+- This variable is in the round-roaster-stores.csv file
+
+AB Analysis Tool
+Make sure to use weekly gross margin per store in all lift calculations and not total sales. Your data has gross margin in it but you will have to use a summarize tool to get weekly gross margin per store.
+
+Steps
+Filter the data to the proper date range
+*Aggregate the data to get the weekly gross margin and weekly traffic count (count of unique invoices)
+Calculate Trend and Seasonality with the AB Trend Tool
+Label the data as treatment and control stores
+Calculate correlation between other numeric measures and the performance metric (gross margin)
+Match Treatment to control stores per region using the AB Controls Tool
+Calculate lift from control to treatment store with AB Analysis tool
+

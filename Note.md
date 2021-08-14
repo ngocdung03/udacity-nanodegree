@@ -40,7 +40,7 @@
     - Cleanup, format, and blend a wide range of data sources
     - Build predictive classification models using Logistic Regression, Decision Tree, Random Forest, and Boosted Model
 
-### Lesson 3: A/B test
+##### Lesson 3: A/B test
 - Eperimental variables: outcome
 - Control variables: to make sure that 2 groups are as similar as possible
 - Determine which control variables should be used:
@@ -74,6 +74,8 @@
         - scrubbing out any outliers
         - getting rid of stores with missing data
         - matching control stores to treatment stores
+            - Numeric measures are needed in order to match them.
+            - Two of the best measures: trend and seasonality.
         - selecting the appropriate comparable period
     - To accommodate discrete variables, the units need to be matched with those that share a discrete characteristic.
     - Problem solving framework: You may have to try different combinations to find variable that give you the best matching results.
@@ -87,5 +89,10 @@
         - Based on the duration of our experiment, how many weeks of data should we have for our comparison period? 10 weeks.
         - How many weeks of historical data should we have? 1 year + 12 weeks = 64 weeks
         - Join tool in Alteryx: L output - control candidate stores, J output - treatment stores.
-        - A/B Analysis tool: P input - performance data,  I ouput - HTML based interaction dashboard, O output - textual summary 
-d
+        - A/B Analysis tool: P input - performance data,  I ouput - HTML based interaction dashboard, O output - textual summary.
+
+##### Time series forecasting
+- ARISMA, ETS models.
+- Order matters: dependency on time.
+- Sequential and equal intervaxl measurement.
+- One data point each time.
