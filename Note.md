@@ -96,3 +96,4 @@
 - Order matters: dependency on time.
 - Sequential and equal intervaxl measurement.
 - One data point each time.
+- Time series continue...
