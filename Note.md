@@ -96,4 +96,12 @@
 - Order matters: dependency on time.
 - Sequential and equal intervaxl measurement.
 - One data point each time.
-- Time series continue...
+- Objectives:
+    - Identify patterns.
+    - Predict trends.
+- Naive method: use data closest in time to predict.
+    - If there is not enough data to create a predictive model, it can supplment forecasts for the near future.
+- Exponential smoothing method.
+- A trend cycle: uptrend, horizontal trend, downtrend.
+- Seasonality
+- Cyclical pattern: exists when data 
