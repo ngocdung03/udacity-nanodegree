@@ -101,7 +101,8 @@
     - Predict trends.
 - Naive method: use data closest in time to predict.
     - If there is not enough data to create a predictive model, it can supplment forecasts for the near future.
-- Exponential smoothing method.
 - A trend cycle: uptrend, horizontal trend, downtrend.
-- Seasonality
-- Cyclical pattern: exists when data 
+- Seasonality: fixed period, associate with calendar. 
+- Cyclical pattern: exists when data exhibits rises and falls not of a fixed period.
+- Exponential Smoothing: ETS
+
