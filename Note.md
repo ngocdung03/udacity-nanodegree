@@ -105,4 +105,30 @@
 - Seasonality: fixed period, associate with calendar. 
 - Cyclical pattern: exists when data exhibits rises and falls not of a fixed period.
 - Exponential Smoothing: ETS
-
+    - Use weighted averages: more weight to the most recent observation.
+    - ETS: Error, Trend, Seasonality. Each term can be applied either additively, multiplicatively, ...
+    - [Time series decomposition plot.jpeg]
+    - Additive model: when the trend and seasonal variation are relatively constant over time.
+    - Multiplicative model: when they decrease or increase in magnitude over time.
+    - [Trend for models.jpg], see more for plots of seasonal patterns in additive and multiplicative models.
+    - If time series does not have a trend line and does not have seasonality component: *Simple Exponential Smoothing* model.
+        - Forecast = Weight[t]*Y[t] + Weight[t-1]*Y[t-1] + Weight[t-2]*Y[t-2] + ... + α(1-α)^n Yn
+        - The smoothing parameter α can be set for any value between 0 and 1.
+        - Choosing the correct smoothing parameter is often an iterative process.
+        - The simple exponential smoothing method does not account for any trend or seasonal components, rather, it only uses the decreasing weights to forecast future results. 
+    - Double Exponential Smoothing (Holt's Linear Trend):
+        - Additive
+        - Include trend in calculation, not season
+        - http://www.real-statistics.com/time-series-analysis/basic-time-series-forecasting/holt-linear-trend/
+    - Exponential Trend Model: similar to Holt's Linear Trend with level and trend are applied multiplicatively.
+    - Damped Trend Model: dampens the trend line into a flat line, some time into the future. Can apply in both additive and multiplicative calculation.
+        - Can run a damped model and its original version side by side. Then check the forecasted errors to see which one fits time series better.
+    - Holt-Winters Seasonal Method: all 3 components
+        - Can be used with Damped parameters.
+        - Most widely regarded methods for forecasting seasonal data.
+        - Additive for trend.
+        - Multiplicative and additive for seasonal components.
+    - can generalize all of these models using a naming system for ETS: Error, Trend, Seasonality
+        - for each component in the ETS system, we can assign None, Multiplicative, or Additive (or N, M, A) for each of the three components in our time series.
+        - Examples: A time series model that has a constant error, linear trend, and increasing seasonal components means we would need to use an ETS model of: ETS(A,A,M)
+    - Steps to building an ETS model: start off by determining how to apply the E, T, and S components based on your data. Then, you can create a holdout sample, build the model, and check the model’s forecast against the holdout sample.
