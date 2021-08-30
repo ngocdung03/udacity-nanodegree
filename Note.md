@@ -132,3 +132,60 @@
         - for each component in the ETS system, we can assign None, Multiplicative, or Additive (or N, M, A) for each of the three components in our time series.
         - Examples: A time series model that has a constant error, linear trend, and increasing seasonal components means we would need to use an ETS model of: ETS(A,A,M)
     - Steps to building an ETS model: start off by determining how to apply the E, T, and S components based on your data. Then, you can create a holdout sample, build the model, and check the model’s forecast against the holdout sample.
+- ARIMA: Auto, Regressive, Integrated, Moving, Average
+    - Non seasonal ARIMA: represented by p, d, q
+        - p (AR): periods to lag for, helps adjust the line fitted to forecast the series.
+        - d (I): differencing, number of transformations used in the process, used to transform a time series into a stationary one.
+        - q (MA): moving average, lag of the error component.
+        - https://www.investopedia.com/terms/a/autoregressive-integrated-moving-average-arima.asp
+    - Stationary time series: mean and variance are constant over time.
+        - Allow to obtain meaningful statistics: means, variances, and correlations with other variables.
+        - The number of times of differencing needed to render the series stationary will be the differenced I(d) term in our ARIMA model.
+        - The best way to determine whether or not the series is sufficiently differenced is to plot the differenced series and check to see if there is a constant mean and variance.
+    - Autocorrelation: how correlated a time series is with its past values.
+        - Autocorrelation function plot
+        - Suggest the time series is not stationary, need to be differenced
+    - Generally use either AR or MA term. Models that use both are less common.
+        - If the stationarized series has positive correlation at Lag-1, AR terms are best. (and spike decay to 0 in ACF plot)
+        - If it has negative correlation at Lag-1, MA term are best.
+        - [AR-MA-ACF-PACF.jpeg]
+    - Partial correlation: the correlation between 2 variables controlling for the values of another set of variables.
+        - https://online.stat.psu.edu/stat510/lesson/2/2.2
+        - https://machinelearningmastery.com/gentle-introduction-autocorrelation-partial-autocorrelation/#:~:text=A%20partial%20autocorrelation%20is%20a,relationships%20of%20intervening%20observations%20removed.
+        - PACF: correlation of the points controlling for the values of all previous lag variables. Suggests how many AR terms needed to use to explain the article relation pattern in a time series.
+            - If it drops off at lag-k: ARk Model
+            - If it drops off more gradually: MA Model
+    - *Autoregressive* component: Determine how many AR in model by ACF and PACF -> suggest the best models to test against each others.
+    - *Moving average* component: when the series undergoes random jumps whose effects are felt in two or more consecutive periods. 
+        - The jumps are represented in the error calculated in the ARIMA model.
+        - What the MA() component will lag for.
+        - A purely MA() model will smooth out the impact of sudden movements in the data, similar to simple exponential smoothing methods. 
+        - Negatively autocorrelated at Lag-1, ACF cuts off sharply after a few lags, PACF decreases out more gradually.
+    - Remember you should always review the ACF and PACF of differenced series when making judgements on how many AR and MA terms to include.
+    - Identifying the numbers of AR or MA terms in an ARIMA model: https://people.duke.edu/~rnau/411arim3.htm
+    - *Integrated* Component: number of times we have to difference our dataset to make it stationary.
+    - Seasonal ARIMA: ARIMA(p,d,q)(P,D,Q)m
+         - m: periods in each season.
+         - P,D,Q: terms for the seasonal part of the model.
+         - Non-seasonal/seasonal differencing or combination
+            - In Alteryx: Multi-Row Formula tool: Create New Field = Seasonal Difference; format Double; Num Rows = 12; Values that don't Exist = NULL; Expressions = [Bookings] - [Row-12:Bookings]
+            - Adjust for seasonal difference: Multi-row formula tool: Create New Field = S First Difference; Double; 1; NULL; Expressions = [Seasonal Difference] - [Row-1: Seasonal Difference]
+            - TS plot: plot S First Difference.
+            - [ts-plot-tool-error-debugging.pdf]
+        - Seasonal AR, MA: account for seasonal lag.
+            - When looking for non-seasonal p and q values in seasonally difference data, we can ignore any significance at the seasonal lags. (eg: only consider lag 12, 24)
+    - Set up ARIMA Tool: 
+        - Model name = ARIMA, Target = [target], Monthly; 
+        - Model customization tab = Completely user specified model -> set up value for pdq and PDQ.
+        - Other options = Series starting period: specify year and start week/month...
+    - Steps to build a ARIMA model: [Build your first ARIMA Model.docx]
+- Important properties of the time series: Patterns of variation, Effects of seasonality, Removing autocorrelation.
+- The assumptions on which you base your chosen model should agree with your intuition about how the time series is likely to behave in the future.
+- Comparing criteria: Residual plots, forecasting errors, Akaike Information Criteria.
+- Holdout sample: usually the most recent data points. The size depends: how long the time series is and how far you would like to forecast (ideally at least the periods you are forecasting for).
+- Good time series forecasting model: uncorrelated residuals, ~0 mean of residuals.
+- O node (output), I node (interactive) in TS Forecast tool
+- Accuracy: what is being forecasted, what accuracy measure is used, what type of data set is used.
+
+### Cluster Analysis
+- Refer: https://www.analyticsvidhya.com/blog/2016/03/pca-practical-guide-principal-component-analysis-python/
