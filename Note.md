@@ -186,3 +186,7 @@
 - Good time series forecasting model: uncorrelated residuals, ~0 mean of residuals.
 - O node (output), I node (interactive) in TS Forecast tool
 - Accuracy: what is being forecasted, what accuracy measure is used, what type of data set is used.
+
+# Cluster analyses
+- k-mean
+- PCA : watch more
