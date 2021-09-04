@@ -187,3 +187,23 @@
 - O node (output), I node (interactive) in TS Forecast tool
 - Accuracy: what is being forecasted, what accuracy measure is used, what type of data set is used.
 
+ARIMA Models
+Summary: ARIMA which stands for Autoregressive Integrated Moving Average helps you forecast data for
+seasonal and nonseasonal data
+STEP 1: TIME SERIES DECOMPOSITION PLOT
+A time series decomposition plot allows you to observe the seasonality, trend, and error/remainder terms
+of a time series.
+Useful Alteryx tool: TS Plot
+STEP 2: DETERMINE THE ARIMA TERMS
+Nonseasonal ARIMA models are displayed in the terms (p,d,q) which stand for p - periods to lag for, d -
+number of transformations used to make the data stationary, q - lags of the error component
+Stationary - mean and variance are constant over time vs Non-Stationary - mean and variance change
+over time
+Differencing - take the value in the current period and subtract it by the value from the previous period.
+You might have to do this several times to make the data stationary. This is the Integrated component
+which is d in the model terms.
+Autocorrelation - How correlated a time series is with its past values, if positive at Lag-1 then AR if
+negative then MA
+Partial Autocorrelation - The correlation between 2 variables controlling for the values of another set of
+variables. If the partial autocorrelation drops of quickly then AR terms, if it slowly decays then MA
+Seasonal ARIMA models are denoted (p,d,q)(P,D,Q)m
