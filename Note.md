@@ -186,24 +186,11 @@
 - Good time series forecasting model: uncorrelated residuals, ~0 mean of residuals.
 - O node (output), I node (interactive) in TS Forecast tool
 - Accuracy: what is being forecasted, what accuracy measure is used, what type of data set is used.
-
-ARIMA Models
-Summary: ARIMA which stands for Autoregressive Integrated Moving Average helps you forecast data for
-seasonal and nonseasonal data
-STEP 1: TIME SERIES DECOMPOSITION PLOT
-A time series decomposition plot allows you to observe the seasonality, trend, and error/remainder terms
-of a time series.
-Useful Alteryx tool: TS Plot
-STEP 2: DETERMINE THE ARIMA TERMS
-Nonseasonal ARIMA models are displayed in the terms (p,d,q) which stand for p - periods to lag for, d -
-number of transformations used to make the data stationary, q - lags of the error component
-Stationary - mean and variance are constant over time vs Non-Stationary - mean and variance change
-over time
-Differencing - take the value in the current period and subtract it by the value from the previous period.
-You might have to do this several times to make the data stationary. This is the Integrated component
-which is d in the model terms.
-Autocorrelation - How correlated a time series is with its past values, if positive at Lag-1 then AR if
-negative then MA
-Partial Autocorrelation - The correlation between 2 variables controlling for the values of another set of
-variables. If the partial autocorrelation drops of quickly then AR terms, if it slowly decays then MA
-Seasonal ARIMA models are denoted (p,d,q)(P,D,Q)m
+- Interpreting measures of error:
+    - Scale dependents errors: such as mean error (ME) mean percentage error (MPE), mean absolute error (MAE) and root mean squared error (RMSE), are based on a set scale, and cannot be used to make comparisons that are on a different scale.
+    - Percentage errors, like MAPE, are useful because they are scale independent, so they can be used to compare forecasts between different data series, unlike scale dependent errors. The disadvantage is that it cannot be used if the series has zero values.
+    - Scale-free errors were introduced more recently to offer a scale-independent measure that doesn't have many of the problems of other errors like percentage errors. (MASE)
+    - https://robjhyndman.com/papers/foresight.pdf
+- Using AIC to test ARIMA models: https://coolstatsblog.com/2013/08/14/using-aic-to-test-arima-models-2/
+    - Alteryx will automate the model selection process
+- Also consider the confidence intervals when comparing the models.
