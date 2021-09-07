@@ -194,3 +194,5 @@
 - Using AIC to test ARIMA models: https://coolstatsblog.com/2013/08/14/using-aic-to-test-arima-models-2/
     - Alteryx will automate the model selection process
 - Also consider the confidence intervals when comparing the models.
+
+# Run the first models on Time series
