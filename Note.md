@@ -141,7 +141,7 @@
     - Stationary time series: mean and variance are constant over time.
         - Allow to obtain meaningful statistics: means, variances, and correlations with other variables.
         - The number of times of differencing needed to render the series stationary will be the differenced I(d) term in our ARIMA model.
-        - The best way to determine whether or not the series is sufficiently differenced is to plot the differenced series and check to see if there is a constant mean and variance.
+        - *The best way to determine whether or not the series is sufficiently differenced is to plot the differenced series and check to see if there is a constant mean and variance.
     - Autocorrelation: how correlated a time series is with its past values.
         - Autocorrelation function plot
         - Suggest the time series is not stationary, need to be differenced
