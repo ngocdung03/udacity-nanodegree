@@ -196,3 +196,4 @@
 - Also consider the confidence intervals when comparing the models.
 
 # Run the first models on Time series
+- Refer to: https://www.analyticsvidhya.com/blog/2016/03/pca-practical-guide-principal-component-analysis-python/
