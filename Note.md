@@ -197,3 +197,12 @@
 - In simple words, PCA is a method of obtaining important variables (in form of components) from a large set of variables available in a data set. It extracts low dimensional set of features by taking a projection of irrelevant dimensions from a high dimensional data set with a motive to capture as much information as possible. With fewer variables obtained while minimising the loss of information, visualization also becomes much more meaningful. PCA is more useful when dealing with 3 or higher dimensional data.
 
 ##### Segmentation and Clustering
+- Standardization: deal with data as a whole, treat all objects in the same way.
+- Localization: customize based on specifics of the individual.
+    + Good: meet local needs, optimize results of the store.
+    + Bad: Huge amount of extra costs, more resources needed to accomplish it.
+- Clustering/segmentation
+- Data type in clustering:
+    - If categorical variable related to numerical: assign number as ordinal variable
+- Data quality: missing and outliers
+- Scaling
