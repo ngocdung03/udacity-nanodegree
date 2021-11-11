@@ -215,31 +215,36 @@
     - Loadings: effect that each particular variable has on that component, size matters but sign doesn't matter.
     - Rule of thumb: capture 80% of total variance.
     - In course example, variables related to snow are not scaled because all the values for snow fall in July are zero. The scaling process doesn't work and would thrown an error.
-    - Clustering Techniques:
-        - Hierarchical: Finding the closest distance between entities. No need to predetermine how many clusters. Slow with a large set of objects.
-            - Agglomerative/bottom up: each observation starts as one cluster and merge up (single/complete/average/centroid linkage).
-            - Divisive/top down: all of the objects are in a single cluster, remove the outsiders from the least cohesive cluster.
-        - K-centroid: Finding the objects closest to the centroids. Specify k number of centroids. Works well when clusters are equal sizes in densities. Highly sensitive with outliers -> should scale the fields.
-            - The locations of the seed centroids can be critical.
-            - Better solution: multiple starting random seeds and averaged results.
-            - Choosing k: 
-                - Based on study objective
-                - Small # clusters don't fit all descriptors
-                - Large # may not work as well operationally.
-        - Tracking # clusters:
-            - For Hierarchical: using Dendogram.
-            - For k-centroid: internal/external cluster validation - test a cluster solution to see how 'good' it is. 
-                - Adjusted rand index: how similar the objects within a cluster are (cluster stability)
-                - Calinski-Harabasz index(CH): both compactness and distinctness of the clusters.
-                - Find the # in the box-plot report of Alteryx so that median is high and the spread is minimized.
-                - When comparing methods, note the scale of the indices
-                - Reconsiderint the variables used.
-        - Interpreting cluster results:
-            - Size: if a cluster is abnormally small in relative size -> unusual or outliers, look specifically why this is the case.
-            - Avg ditance within the cluster: the smaller the more compact
-            - Max distance: distance from the point farthest from the centroid, show how far the farthest outlier.
-            - Separation: distant of the closest point not in the relevant cluster, the larger the better
-            - Characterize each cluster by variable: 
-                - look only into within variable comparisons - a high positive value versus a high negative indicate for that variable, those 2 clusters are opposite.
-                - the values don't indicate real ordinal values. (They don't necessarily have the most absolute value but the most different)
-        - In Alteryx, export the list with only Store ID and Cluster ID
+- Clustering Techniques:
+    - Hierarchical: Finding the closest distance between entities. No need to predetermine how many clusters. Slow with a large set of objects.
+        - Agglomerative/bottom up: each observation starts as one cluster and merge up (single/complete/average/centroid linkage).
+        - Divisive/top down: all of the objects are in a single cluster, remove the outsiders from the least cohesive cluster.
+    - K-centroid: Finding the objects closest to the centroids. Specify k number of centroids. Works well when clusters are equal sizes in densities. Highly sensitive with outliers -> should scale the fields.
+        - The locations of the seed centroids can be critical.
+        - Better solution: multiple starting random seeds and averaged results.
+        - Choosing k: 
+            - Based on study objective
+            - Small # clusters don't fit all descriptors
+            - Large # may not work as well operationally.
+    - Tracking # clusters:
+        - For Hierarchical: using Dendogram.
+        - For k-centroid: internal/external cluster validation - test a cluster solution to see how 'good' it is. 
+            - Adjusted rand index: how similar the objects within a cluster are (cluster stability)
+            - Calinski-Harabasz index(CH): both compactness and distinctness of the clusters.
+            - Find the # in the box-plot report of Alteryx so that median is high and the spread is minimized.
+            - When comparing methods, note the scale of the indices
+            - Reconsiderint the variables used.
+    - Interpreting cluster results:
+        - Size: if a cluster is abnormally small in relative size -> unusual or outliers, look specifically why this is the case.
+        - Avg ditance within the cluster: the smaller the more compact
+        - Max distance: distance from the point farthest from the centroid, show how far the farthest outlier.
+        - Separation: distant of the closest point not in the relevant cluster, the larger the better
+        - Characterize each cluster by variable: 
+            - look only into within variable comparisons - a high positive value versus a high negative indicate for that variable, those 2 clusters are opposite.
+            - the values don't indicate real ordinal values. (They don't necessarily have the most absolute value but the most different)
+    - In Alteryx, export the list with only Store ID and Cluster ID
+    - It is best validate your clusters using variables that were not directly included in the cluster modeling process
+    - Communicating the 'story' and ongoing testing: 
+        - Brief names of the clusters that summarize the findings.
+        - When apply and translate the result of cluster analysis, may test with a limited number of objects first: eg. A/B testing
+        - Cluster analysis should remain an iterative process
