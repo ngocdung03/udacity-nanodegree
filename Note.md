@@ -247,4 +247,8 @@
     - Communicating the 'story' and ongoing testing: 
         - Brief names of the clusters that summarize the findings.
         - When apply and translate the result of cluster analysis, may test with a limited number of objects first: eg. A/B testing
-        - Cluster analysis should remain an iterative process
+        - Cluster analysis should remain an iterative process.
+##### Tableau
+- Top 10 Tableau table calculations: https://www.tableau.com/about/blog/top-10-tableau-table-calculations
+- Split a field into multiple fields: https://help.tableau.com/current/pro/desktop/en-us/split.htm#troubleshooting-splits-and-custom-splits
+- Combining data: https://help.tableau.com/current/pro/desktop/en-us/joining_tables.htm
