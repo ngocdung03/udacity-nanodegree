@@ -252,3 +252,21 @@
 - Top 10 Tableau table calculations: https://www.tableau.com/about/blog/top-10-tableau-table-calculations
 - Split a field into multiple fields: https://help.tableau.com/current/pro/desktop/en-us/split.htm#troubleshooting-splits-and-custom-splits
 - Combining data: https://help.tableau.com/current/pro/desktop/en-us/joining_tables.htm
+- Hierarchies: Tableau automatically creates hỉerarchy for date variable (year>quarter>month) but you can create manual hierarchies.
+    - If data by date looks discrete, can convert it into continuous.
+- Filter in Tableau: https://www.tableau.com/learn/tutorials/on-demand/using-filter-shelf
+- Priority for encoding: postion, length > color, shape > size.
+- Small multiples and dual axis: for dual axis, can drag 2nd measure to the right side of the plot.
+    - https://evolytics.com/blog/tableau-201-how-to-make-small-multiples/
+- Map configuration: https://help.tableau.com/current/pro/desktop/en-us/maps_editlocation.htm
+- Is dual-scaled axes good?: https://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf
+- Groups and sets: Sets are dynamic (categorize data by conditions - >,<...) while groups are static
+- Calculated Fields: with > 2 categories, group may not be a best idea.
+    - Eg: IF SUM([Sales]) > 10000 THEN "Good" ELSE "Bad"
+    - IIF(SUM([Sales]) > 10000, "Good", "Bad")
+    - Calculations with strings: https://www.tableau.com/learn/tutorials/on-demand/string-calculations ; https://www.clearlyandsimply.com/clearly_and_simply/2014/06/string-calculations-in-tableau.html
+    - More: https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields.htm
+- Table calculations: useful for helping you to compare the data that exists in a plot to other parts of the plot.
+- Other resources: 
+    - Free training videos: https://www.tableau.com/learn/training/20213
+    - Creating an overlapped bar chart: https://kb.tableau.com/articles/howto/dual-axis-bar-chart-multiple-measures
