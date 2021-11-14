@@ -94,7 +94,7 @@
 ##### Time series forecasting
 - ARISMA, ETS models.
 - Order matters: dependency on time.
-- Sequential and equal intervaxl measurement.
+- Sequential and equal interval measurement.
 - One data point each time.
 - Objectives:
     - Identify patterns.
@@ -103,7 +103,7 @@
     - If there is not enough data to create a predictive model, it can supplment forecasts for the near future.
 - A trend cycle: uptrend, horizontal trend, downtrend.
 - Seasonality: fixed period, associate with calendar. 
-- Cyclical pattern: exists when data exhibits rises and falls not of a fixed period.
+- Cyclical pattern: exists when data exhibits rises and falls not of a fixed perion often with the interval longer than seasonal pattern.
 - Exponential Smoothing: ETS
     - Use weighted averages: more weight to the most recent observation.
     - ETS: Error, Trend, Seasonality. Each term can be applied either additively, multiplicatively, ...
@@ -155,7 +155,7 @@
         - PACF: correlation of the points controlling for the values of all previous lag variables. Suggests how many AR terms needed to use to explain the article relation pattern in a time series.
             - If it drops off at lag-k: ARk Model
             - If it drops off more gradually: MA Model
-    - *Autoregressive* component: Determine how many AR in model by ACF and PACF -> suggest the best models to test against each others.
+    - *Autoregressive* component: The number of lags that correlated with current value. Determine how many AR in model by ACF and PACF -> suggest the best models to test against each others.
     - *Moving average* component: when the series undergoes random jumps whose effects are felt in two or more consecutive periods. 
         - The jumps are represented in the error calculated in the ARIMA model.
         - What the MA() component will lag for.
@@ -168,12 +168,15 @@
          - m: periods in each season.
          - P,D,Q: terms for the seasonal part of the model.
          - Non-seasonal/seasonal differencing or combination
-            - In Alteryx: Multi-Row Formula tool: Create New Field = Seasonal Difference; format Double; Num Rows = 12; Values that don't Exist = NULL; Expressions = [Bookings] - [Row-12:Bookings]
-            - Adjust for seasonal difference: Multi-row formula tool: Create New Field = S First Difference; Double; 1; NULL; Expressions = [Seasonal Difference] - [Row-1: Seasonal Difference]
+            - Adjust for seasonal difference:
+            `Multi-Row Formula tool: Create New Field = Seasonal Difference; format Double; Num Rows = 12; Values that don't Exist = NULL; Expressions = [Bookings] - [Row-12:Bookings]`
+            - Seasonal difference hasn't adjust for the effect of seasonality -> Adjust for first seasonal difference: 
+            `Multi-row formula tool: Create New Field = S First Difference; Double; 1; NULL; Expressions = [Seasonal Difference] - [Row-1: Seasonal Difference]`
             - TS plot: plot S First Difference.
             - [ts-plot-tool-error-debugging.pdf]
-        - Seasonal AR, MA: account for seasonal lag.
-            - When looking for non-seasonal p and q values in seasonally difference data, we can ignore any significance at the seasonal lags. (eg: only consider lag 12, 24)
+        - Determine Seasonal AR, MA terms: account for seasonal lag.
+            - When looking for non-seasonal p and q values in seasonally difference data, we can ignore any significance at the seasonal lags. 
+            - For seasonal term P and Q: for monthly data, only consider lag 12, 24, and so on. If seasonal autocorrelation is (+): AR, (-): MA.
     - Set up ARIMA Tool: 
         - Model name = ARIMA, Target = [target], Monthly; 
         - Model customization tab = Completely user specified model -> set up value for pdq and PDQ.
@@ -184,10 +187,12 @@
 - Comparing criteria: Residual plots, forecasting errors, Akaike Information Criteria.
 - Holdout sample: usually the most recent data points. The size depends: how long the time series is and how far you would like to forecast (ideally at least the periods you are forecasting for).
 - Good time series forecasting model: uncorrelated residuals, ~0 mean of residuals.
+    - After differencing or adding AR/MA terms, make sure almost the lags do not have a siginificant correlation in the ACF plot (residual plot). Otherwise, should add more term. 
+    - If the residual is biased, add mean for all the forecasts.
 - O node (output), I node (interactive) in TS Forecast tool
 - Accuracy: what is being forecasted, what accuracy measure is used, what type of data set is used.
-- Interpreting measures of error:
-    - Scale dependents errors: such as mean error (ME) mean percentage error (MPE), mean absolute error (MAE) and root mean squared error (RMSE), are based on a set scale, and cannot be used to make comparisons that are on a different scale.
+- Interpreting measures of error: [Interpreting measures of error.doc]
+    - Scale dependents errors: such as mean error (ME) mean percentage error (MPE), mean absolute error (MAE) and root mean squared error (RMSE - lower means narrower range of possible values), are based on a set scale, and cannot be used to make comparisons that are on a different scale.
     - Percentage errors, like MAPE, are useful because they are scale independent, so they can be used to compare forecasts between different data series, unlike scale dependent errors. The disadvantage is that it cannot be used if the series has zero values.
     - Scale-free errors were introduced more recently to offer a scale-independent measure that doesn't have many of the problems of other errors like percentage errors. (MASE)
     - https://robjhyndman.com/papers/foresight.pdf
