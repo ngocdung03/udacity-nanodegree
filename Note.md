@@ -275,3 +275,5 @@
 - Other resources: 
     - Free training videos: https://www.tableau.com/learn/training/20213
     - Creating an overlapped bar chart: https://kb.tableau.com/articles/howto/dual-axis-bar-chart-multiple-measures
+
+##### Capstone project
