@@ -277,4 +277,8 @@
     - Creating an overlapped bar chart: https://kb.tableau.com/articles/howto/dual-axis-bar-chart-multiple-measures
 
 ##### Capstone project
+<<<<<<< HEAD
 - Finish capstone project
+=======
+- Begin task 3
+>>>>>>> 0ba2af14d7e18ccfa9d881e8fdafe9d7b0f146b8
